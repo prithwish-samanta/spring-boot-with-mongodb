@@ -1,0 +1,5930 @@
+[
+  {
+    "id": "3ef2793df18b7e0af3cf1b62",
+    "firstName": "Jane",
+    "lastName": "Anderson",
+    "email": "jane.anderson24@example.com",
+    "dob": "1997-01-20",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 81
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 53
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 98
+      },
+      {
+        "name": "Networks",
+        "marks": 61
+      }
+    ],
+    "enrollmentDate": "2019-02-16",
+    "active": true
+  },
+  {
+    "id": "bc769eefc8685bb2e666e857",
+    "firstName": "David",
+    "lastName": "Miller",
+    "email": "david.miller29@example.com",
+    "dob": "2004-05-05",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 52
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 72
+      },
+      {
+        "name": "AI",
+        "marks": 65
+      },
+      {
+        "name": "Algorithms",
+        "marks": 68
+      }
+    ],
+    "enrollmentDate": "2015-08-03",
+    "active": true
+  },
+  {
+    "id": "8f6b2ec4453a8721b5efad0b",
+    "firstName": "Ian",
+    "lastName": "Miller",
+    "email": "ian.miller41@example.com",
+    "dob": "1995-11-16",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 87
+      },
+      {
+        "name": "AI",
+        "marks": 66
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 71
+      },
+      {
+        "name": "Databases",
+        "marks": 76
+      },
+      {
+        "name": "Data Structures",
+        "marks": 79
+      }
+    ],
+    "enrollmentDate": "2018-04-06",
+    "active": true
+  },
+  {
+    "id": "822e9753e771a6af02a75984",
+    "firstName": "Alice",
+    "lastName": "Jackson",
+    "email": "alice.jackson65@example.com",
+    "dob": "2005-07-28",
+    "department": {
+      "id": "e43a6fd4c9d6f7fce406611b"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 81
+      },
+      {
+        "name": "Web Development",
+        "marks": 78
+      },
+      {
+        "name": "Algorithms",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2018-10-10",
+    "active": true
+  },
+  {
+    "id": "ae84af184ec18f44feac2bbc",
+    "firstName": "Tina",
+    "lastName": "Davis",
+    "email": "tina.davis13@example.com",
+    "dob": "1995-11-11",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 86
+      },
+      {
+        "name": "Databases",
+        "marks": 99
+      },
+      {
+        "name": "Data Structures",
+        "marks": 63
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 67
+      }
+    ],
+    "enrollmentDate": "2015-12-26",
+    "active": false
+  },
+  {
+    "id": "ae4d99b7929c7d9d3b0bbc69",
+    "firstName": "David",
+    "lastName": "Davis",
+    "email": "david.davis86@example.com",
+    "dob": "2004-10-06",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 95
+      },
+      {
+        "name": "Data Structures",
+        "marks": 65
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 58
+      }
+    ],
+    "enrollmentDate": "2019-12-19",
+    "active": true
+  },
+  {
+    "id": "e715996f5238ba7b38b4a8dc",
+    "firstName": "Jane",
+    "lastName": "Moore",
+    "email": "jane.moore44@example.com",
+    "dob": "2000-10-25",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 100
+      },
+      {
+        "name": "Web Development",
+        "marks": 85
+      },
+      {
+        "name": "Algorithms",
+        "marks": 59
+      }
+    ],
+    "enrollmentDate": "2020-06-11",
+    "active": true
+  },
+  {
+    "id": "1b29de3738e5357c663ae8f3",
+    "firstName": "Jane",
+    "lastName": "Thomas",
+    "email": "jane.thomas50@example.com",
+    "dob": "2002-01-19",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 62
+      },
+      {
+        "name": "Web Development",
+        "marks": 82
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 79
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 98
+      }
+    ],
+    "enrollmentDate": "2018-10-14",
+    "active": false
+  },
+  {
+    "id": "0cf0fa4c9c11a4ecd17a4f85",
+    "firstName": "Paul",
+    "lastName": "Hernandez",
+    "email": "paul.hernandez39@example.com",
+    "dob": "1997-04-09",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 66
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 83
+      },
+      {
+        "name": "Databases",
+        "marks": 98
+      }
+    ],
+    "enrollmentDate": "2018-10-26",
+    "active": true
+  },
+  {
+    "id": "9f0ca890f0e1f7aecbce8b04",
+    "firstName": "Charlie",
+    "lastName": "Williams",
+    "email": "charlie.williams40@example.com",
+    "dob": "2002-05-23",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 98
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 68
+      },
+      {
+        "name": "Algorithms",
+        "marks": 58
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 71
+      }
+    ],
+    "enrollmentDate": "2015-03-28",
+    "active": true
+  },
+  {
+    "id": "743eb439fb6b331641076d3e",
+    "firstName": "Laura",
+    "lastName": "Wilson",
+    "email": "laura.wilson38@example.com",
+    "dob": "1995-08-10",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 97
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 69
+      },
+      {
+        "name": "Web Development",
+        "marks": 85
+      },
+      {
+        "name": "Algorithms",
+        "marks": 84
+      }
+    ],
+    "enrollmentDate": "2018-12-04",
+    "active": true
+  },
+  {
+    "id": "934c502918bd4d68ecc23269",
+    "firstName": "Jane",
+    "lastName": "Brown",
+    "email": "jane.brown63@example.com",
+    "dob": "2001-02-28",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 98
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 56
+      },
+      {
+        "name": "Data Structures",
+        "marks": 78
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 75
+      }
+    ],
+    "enrollmentDate": "2019-10-20",
+    "active": true
+  },
+  {
+    "id": "57392dc459e6a233a2577380",
+    "firstName": "Kyle",
+    "lastName": "Gonzalez",
+    "email": "kyle.gonzalez70@example.com",
+    "dob": "1999-07-18",
+    "department": {
+      "id": "48ca6a2e1259442233322ae4"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 79
+      },
+      {
+        "name": "Data Structures",
+        "marks": 70
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 70
+      }
+    ],
+    "enrollmentDate": "2018-12-02",
+    "active": true
+  },
+  {
+    "id": "cc1b5623bc1bebaeb6588357",
+    "firstName": "Paul",
+    "lastName": "Johnson",
+    "email": "paul.johnson30@example.com",
+    "dob": "1997-06-09",
+    "department": {
+      "id": "e43a6fd4c9d6f7fce406611b"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 99
+      },
+      {
+        "name": "Databases",
+        "marks": 59
+      },
+      {
+        "name": "Web Development",
+        "marks": 61
+      }
+    ],
+    "enrollmentDate": "2020-02-02",
+    "active": true
+  },
+  {
+    "id": "cc410825f55a32cdefee76f1",
+    "firstName": "Grace",
+    "lastName": "Garcia",
+    "email": "grace.garcia57@example.com",
+    "dob": "1996-09-26",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 95
+      },
+      {
+        "name": "Web Development",
+        "marks": 78
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 74
+      }
+    ],
+    "enrollmentDate": "2015-12-19",
+    "active": true
+  },
+  {
+    "id": "bd4218eca2cea21e023f7755",
+    "firstName": "Eva",
+    "lastName": "Gonzalez",
+    "email": "eva.gonzalez36@example.com",
+    "dob": "2003-05-15",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 71
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 69
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 73
+      },
+      {
+        "name": "Algorithms",
+        "marks": 76
+      }
+    ],
+    "enrollmentDate": "2018-10-08",
+    "active": false
+  },
+  {
+    "id": "ee241cb2ea451a24a18bf907",
+    "firstName": "Frank",
+    "lastName": "Smith",
+    "email": "frank.smith13@example.com",
+    "dob": "1996-04-25",
+    "department": {
+      "id": "e43a6fd4c9d6f7fce406611b"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 63
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 56
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 84
+      },
+      {
+        "name": "Databases",
+        "marks": 89
+      }
+    ],
+    "enrollmentDate": "2020-11-12",
+    "active": false
+  },
+  {
+    "id": "6c2da93d08260337d13ad99e",
+    "firstName": "Quincy",
+    "lastName": "Miller",
+    "email": "quincy.miller59@example.com",
+    "dob": "1995-10-16",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 78
+      },
+      {
+        "name": "Web Development",
+        "marks": 73
+      },
+      {
+        "name": "Networks",
+        "marks": 69
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2018-04-04",
+    "active": true
+  },
+  {
+    "id": "ffa26ea084371542720e6661",
+    "firstName": "Alice",
+    "lastName": "Thomas",
+    "email": "alice.thomas56@example.com",
+    "dob": "2001-02-20",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 88
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 81
+      },
+      {
+        "name": "Web Development",
+        "marks": 64
+      },
+      {
+        "name": "AI",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2019-09-20",
+    "active": true
+  },
+  {
+    "id": "3eb9ca2841b429a56ffa1c1a",
+    "firstName": "Jane",
+    "lastName": "Hernandez",
+    "email": "jane.hernandez99@example.com",
+    "dob": "2005-12-11",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 68
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 83
+      },
+      {
+        "name": "Networks",
+        "marks": 97
+      },
+      {
+        "name": "Databases",
+        "marks": 58
+      }
+    ],
+    "enrollmentDate": "2017-11-06",
+    "active": true
+  },
+  {
+    "id": "61291b7f12f0f6c6d152143e",
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "email": "michael.johnson13@example.com",
+    "dob": "2004-02-18",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 74
+      },
+      {
+        "name": "Databases",
+        "marks": 60
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 82
+      },
+      {
+        "name": "AI",
+        "marks": 72
+      }
+    ],
+    "enrollmentDate": "2016-07-12",
+    "active": true
+  },
+  {
+    "id": "9197be530ccdd08e03372540",
+    "firstName": "Nina",
+    "lastName": "Anderson",
+    "email": "nina.anderson19@example.com",
+    "dob": "2002-10-05",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 88
+      },
+      {
+        "name": "Databases",
+        "marks": 63
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 98
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 58
+      }
+    ],
+    "enrollmentDate": "2019-09-26",
+    "active": true
+  },
+  {
+    "id": "7dad7908cd8d69311f52acd8",
+    "firstName": "Kyle",
+    "lastName": "Thomas",
+    "email": "kyle.thomas90@example.com",
+    "dob": "1998-07-23",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 78
+      },
+      {
+        "name": "Data Structures",
+        "marks": 91
+      },
+      {
+        "name": "Networks",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2017-08-12",
+    "active": true
+  },
+  {
+    "id": "cd1cc8f59c638a832b6e8ffe",
+    "firstName": "Oliver",
+    "lastName": "Smith",
+    "email": "oliver.smith16@example.com",
+    "dob": "2004-01-27",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 74
+      },
+      {
+        "name": "Data Structures",
+        "marks": 85
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 52
+      }
+    ],
+    "enrollmentDate": "2016-01-20",
+    "active": true
+  },
+  {
+    "id": "05370915463169651284efd6",
+    "firstName": "Laura",
+    "lastName": "Moore",
+    "email": "laura.moore39@example.com",
+    "dob": "2003-09-15",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 55
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 76
+      },
+      {
+        "name": "Algorithms",
+        "marks": 64
+      },
+      {
+        "name": "Data Structures",
+        "marks": 75
+      }
+    ],
+    "enrollmentDate": "2015-09-08",
+    "active": false
+  },
+  {
+    "id": "3b22564d410289749f88bc62",
+    "firstName": "Hannah",
+    "lastName": "Jones",
+    "email": "hannah.jones64@example.com",
+    "dob": "1997-03-09",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 58
+      },
+      {
+        "name": "Web Development",
+        "marks": 72
+      },
+      {
+        "name": "AI",
+        "marks": 74
+      },
+      {
+        "name": "Data Structures",
+        "marks": 80
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 68
+      }
+    ],
+    "enrollmentDate": "2019-06-26",
+    "active": true
+  },
+  {
+    "id": "0c758009a10337d6c5af7daf",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones35@example.com",
+    "dob": "1995-05-09",
+    "department": {
+      "id": "48ca6a2e1259442233322ae4"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 91
+      },
+      {
+        "name": "Web Development",
+        "marks": 92
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 87
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 88
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 66
+      }
+    ],
+    "enrollmentDate": "2018-02-03",
+    "active": true
+  },
+  {
+    "id": "63cae3cb8bef80667d484f82",
+    "firstName": "Quincy",
+    "lastName": "Wilson",
+    "email": "quincy.wilson61@example.com",
+    "dob": "1995-04-02",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 92
+      },
+      {
+        "name": "Web Development",
+        "marks": 67
+      },
+      {
+        "name": "Networks",
+        "marks": 86
+      },
+      {
+        "name": "Data Structures",
+        "marks": 61
+      }
+    ],
+    "enrollmentDate": "2015-10-21",
+    "active": true
+  },
+  {
+    "id": "cd42b537854e18ad3cc47a5f",
+    "firstName": "Rachel",
+    "lastName": "Taylor",
+    "email": "rachel.taylor77@example.com",
+    "dob": "2005-10-14",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 99
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 77
+      },
+      {
+        "name": "Algorithms",
+        "marks": 51
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 62
+      }
+    ],
+    "enrollmentDate": "2015-09-01",
+    "active": true
+  },
+  {
+    "id": "c25d1ce5d48f063a9e33f276",
+    "firstName": "Oliver",
+    "lastName": "Gonzalez",
+    "email": "oliver.gonzalez93@example.com",
+    "dob": "1996-09-06",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 76
+      },
+      {
+        "name": "Web Development",
+        "marks": 60
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 99
+      },
+      {
+        "name": "Algorithms",
+        "marks": 99
+      },
+      {
+        "name": "Networks",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2018-05-15",
+    "active": false
+  },
+  {
+    "id": "53b484953ae2dd2b6ac4803e",
+    "firstName": "Nina",
+    "lastName": "Gonzalez",
+    "email": "nina.gonzalez94@example.com",
+    "dob": "1995-09-24",
+    "department": {
+      "id": "48ca6a2e1259442233322ae4"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 74
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 84
+      },
+      {
+        "name": "AI",
+        "marks": 77
+      },
+      {
+        "name": "Algorithms",
+        "marks": 64
+      }
+    ],
+    "enrollmentDate": "2017-02-26",
+    "active": true
+  },
+  {
+    "id": "036614bb6123511c1bb3d83b",
+    "firstName": "Sam",
+    "lastName": "Davis",
+    "email": "sam.davis87@example.com",
+    "dob": "2001-06-24",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 74
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 92
+      },
+      {
+        "name": "Data Structures",
+        "marks": 50
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 56
+      },
+      {
+        "name": "Web Development",
+        "marks": 85
+      }
+    ],
+    "enrollmentDate": "2019-01-18",
+    "active": true
+  },
+  {
+    "id": "1b1bfd887582fab147a792f3",
+    "firstName": "Charlie",
+    "lastName": "Taylor",
+    "email": "charlie.taylor92@example.com",
+    "dob": "1996-03-24",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 80
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 56
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 54
+      }
+    ],
+    "enrollmentDate": "2015-01-17",
+    "active": false
+  },
+  {
+    "id": "39a8f01b92d127b98dbc2f31",
+    "firstName": "Nina",
+    "lastName": "Moore",
+    "email": "nina.moore33@example.com",
+    "dob": "2001-07-09",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 69
+      },
+      {
+        "name": "Networks",
+        "marks": 57
+      },
+      {
+        "name": "AI",
+        "marks": 64
+      },
+      {
+        "name": "Data Structures",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2016-12-28",
+    "active": true
+  },
+  {
+    "id": "ee0a755c78316e3bf982e139",
+    "firstName": "Eva",
+    "lastName": "Taylor",
+    "email": "eva.taylor24@example.com",
+    "dob": "2000-07-14",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 52
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 70
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 71
+      }
+    ],
+    "enrollmentDate": "2018-04-06",
+    "active": false
+  },
+  {
+    "id": "1ad27e0291294a50b6770ae5",
+    "firstName": "Eva",
+    "lastName": "Martinez",
+    "email": "eva.martinez84@example.com",
+    "dob": "1997-01-28",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 67
+      },
+      {
+        "name": "Data Structures",
+        "marks": 91
+      },
+      {
+        "name": "AI",
+        "marks": 89
+      }
+    ],
+    "enrollmentDate": "2016-09-14",
+    "active": true
+  },
+  {
+    "id": "b7e7733eda801f228622b0ec",
+    "firstName": "Nina",
+    "lastName": "Hernandez",
+    "email": "nina.hernandez24@example.com",
+    "dob": "2002-02-04",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 65
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 84
+      },
+      {
+        "name": "Web Development",
+        "marks": 52
+      }
+    ],
+    "enrollmentDate": "2017-02-05",
+    "active": true
+  },
+  {
+    "id": "d4f2bb2c9f6b04875b9f2cc1",
+    "firstName": "Charlie",
+    "lastName": "Martin",
+    "email": "charlie.martin51@example.com",
+    "dob": "1999-12-20",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 86
+      },
+      {
+        "name": "Databases",
+        "marks": 77
+      },
+      {
+        "name": "Web Development",
+        "marks": 66
+      }
+    ],
+    "enrollmentDate": "2017-07-11",
+    "active": false
+  },
+  {
+    "id": "d0616bc42def7cdb66af0285",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith46@example.com",
+    "dob": "2002-06-18",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 78
+      },
+      {
+        "name": "Databases",
+        "marks": 58
+      },
+      {
+        "name": "Data Structures",
+        "marks": 77
+      },
+      {
+        "name": "Networks",
+        "marks": 55
+      }
+    ],
+    "enrollmentDate": "2016-09-02",
+    "active": true
+  },
+  {
+    "id": "ed69016ff9a6ccebf99c0be3",
+    "firstName": "Tina",
+    "lastName": "Martin",
+    "email": "tina.martin42@example.com",
+    "dob": "2005-07-15",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 68
+      },
+      {
+        "name": "AI",
+        "marks": 67
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 67
+      },
+      {
+        "name": "Databases",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2016-01-18",
+    "active": true
+  },
+  {
+    "id": "301a58be35b3ee46d2937d6c",
+    "firstName": "Quincy",
+    "lastName": "Williams",
+    "email": "quincy.williams27@example.com",
+    "dob": "1995-11-14",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 74
+      },
+      {
+        "name": "AI",
+        "marks": 64
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2017-02-09",
+    "active": true
+  },
+  {
+    "id": "2a5e9802dbd696e72e1a231c",
+    "firstName": "Oliver",
+    "lastName": "Jackson",
+    "email": "oliver.jackson33@example.com",
+    "dob": "2000-09-27",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 96
+      },
+      {
+        "name": "Networks",
+        "marks": 100
+      },
+      {
+        "name": "Web Development",
+        "marks": 51
+      },
+      {
+        "name": "Databases",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2018-07-13",
+    "active": true
+  },
+  {
+    "id": "d27e1c00da5ae59e62a15f7f",
+    "firstName": "Frank",
+    "lastName": "Rodriguez",
+    "email": "frank.rodriguez65@example.com",
+    "dob": "1998-08-03",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 64
+      },
+      {
+        "name": "Data Structures",
+        "marks": 79
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 91
+      },
+      {
+        "name": "Databases",
+        "marks": 55
+      },
+      {
+        "name": "Networks",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2015-02-13",
+    "active": true
+  },
+  {
+    "id": "bfc0995567b33b6bfac41d8b",
+    "firstName": "David",
+    "lastName": "Lopez",
+    "email": "david.lopez57@example.com",
+    "dob": "2001-07-13",
+    "department": {
+      "id": "48ca6a2e1259442233322ae4"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 74
+      },
+      {
+        "name": "Databases",
+        "marks": 83
+      },
+      {
+        "name": "Data Structures",
+        "marks": 76
+      }
+    ],
+    "enrollmentDate": "2017-04-24",
+    "active": false
+  },
+  {
+    "id": "4990f8410a80f519c9a92714",
+    "firstName": "Sam",
+    "lastName": "Martin",
+    "email": "sam.martin49@example.com",
+    "dob": "2003-07-07",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 73
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 66
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 71
+      },
+      {
+        "name": "Data Structures",
+        "marks": 60
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 97
+      }
+    ],
+    "enrollmentDate": "2019-05-12",
+    "active": false
+  },
+  {
+    "id": "eabb535ede45999cba7b3ed2",
+    "firstName": "Sam",
+    "lastName": "Rodriguez",
+    "email": "sam.rodriguez37@example.com",
+    "dob": "2000-02-16",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 66
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 63
+      },
+      {
+        "name": "Data Structures",
+        "marks": 81
+      },
+      {
+        "name": "Databases",
+        "marks": 60
+      }
+    ],
+    "enrollmentDate": "2016-10-14",
+    "active": true
+  },
+  {
+    "id": "1bddf1ddfa7e36379e0fcaac",
+    "firstName": "Sam",
+    "lastName": "Williams",
+    "email": "sam.williams18@example.com",
+    "dob": "2000-11-18",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 57
+      },
+      {
+        "name": "Databases",
+        "marks": 58
+      },
+      {
+        "name": "Data Structures",
+        "marks": 79
+      }
+    ],
+    "enrollmentDate": "2017-12-27",
+    "active": true
+  },
+  {
+    "id": "a40fbc8d0526136551d5b1cd",
+    "firstName": "Ian",
+    "lastName": "Johnson",
+    "email": "ian.johnson23@example.com",
+    "dob": "1996-12-20",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 84
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 88
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 100
+      },
+      {
+        "name": "Data Structures",
+        "marks": 79
+      },
+      {
+        "name": "Databases",
+        "marks": 99
+      }
+    ],
+    "enrollmentDate": "2015-03-14",
+    "active": true
+  },
+  {
+    "id": "9d5ae6a97256294bd384710a",
+    "firstName": "Tina",
+    "lastName": "Williams",
+    "email": "tina.williams96@example.com",
+    "dob": "2001-12-13",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 79
+      },
+      {
+        "name": "Algorithms",
+        "marks": 80
+      },
+      {
+        "name": "Data Structures",
+        "marks": 65
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 93
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 80
+      }
+    ],
+    "enrollmentDate": "2015-06-27",
+    "active": true
+  },
+  {
+    "id": "b2c95b4a4d25d7bcfedc30b1",
+    "firstName": "Tina",
+    "lastName": "Garcia",
+    "email": "tina.garcia94@example.com",
+    "dob": "1997-02-19",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 88
+      },
+      {
+        "name": "Web Development",
+        "marks": 62
+      },
+      {
+        "name": "Databases",
+        "marks": 98
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 76
+      }
+    ],
+    "enrollmentDate": "2015-05-23",
+    "active": true
+  },
+  {
+    "id": "dd90110ec2995baab5e9755a",
+    "firstName": "Kyle",
+    "lastName": "Miller",
+    "email": "kyle.miller93@example.com",
+    "dob": "2003-09-08",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 85
+      },
+      {
+        "name": "AI",
+        "marks": 66
+      },
+      {
+        "name": "Web Development",
+        "marks": 70
+      }
+    ],
+    "enrollmentDate": "2019-12-02",
+    "active": false
+  },
+  {
+    "id": "adafe1f50d10b85ad2211bac",
+    "firstName": "Alice",
+    "lastName": "Martin",
+    "email": "alice.martin99@example.com",
+    "dob": "1995-02-02",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 77
+      },
+      {
+        "name": "Web Development",
+        "marks": 88
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 92
+      }
+    ],
+    "enrollmentDate": "2015-11-23",
+    "active": true
+  },
+  {
+    "id": "f5efcddbe65c6a2b0c2a4f6e",
+    "firstName": "Kyle",
+    "lastName": "Garcia",
+    "email": "kyle.garcia24@example.com",
+    "dob": "1999-01-23",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 75
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 67
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 52
+      },
+      {
+        "name": "AI",
+        "marks": 58
+      },
+      {
+        "name": "Algorithms",
+        "marks": 97
+      }
+    ],
+    "enrollmentDate": "2018-10-27",
+    "active": true
+  },
+  {
+    "id": "4246c79a6ae39ffd78117690",
+    "firstName": "Ian",
+    "lastName": "Martin",
+    "email": "ian.martin90@example.com",
+    "dob": "2001-06-11",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 73
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 82
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2018-01-22",
+    "active": true
+  },
+  {
+    "id": "570b20141f9d384e325a5825",
+    "firstName": "Quincy",
+    "lastName": "Hernandez",
+    "email": "quincy.hernandez88@example.com",
+    "dob": "1998-04-28",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 68
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 52
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 94
+      },
+      {
+        "name": "Databases",
+        "marks": 54
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 68
+      }
+    ],
+    "enrollmentDate": "2016-10-17",
+    "active": true
+  },
+  {
+    "id": "aec6b1c4f9b2a2f965736046",
+    "firstName": "Paul",
+    "lastName": "Brown",
+    "email": "paul.brown18@example.com",
+    "dob": "2002-12-27",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 80
+      },
+      {
+        "name": "Algorithms",
+        "marks": 81
+      },
+      {
+        "name": "Databases",
+        "marks": 50
+      },
+      {
+        "name": "AI",
+        "marks": 85
+      }
+    ],
+    "enrollmentDate": "2015-06-27",
+    "active": false
+  },
+  {
+    "id": "1b8dd6d606fc29c68d19cd1c",
+    "firstName": "Grace",
+    "lastName": "Martinez",
+    "email": "grace.martinez21@example.com",
+    "dob": "1999-04-01",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 86
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 68
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 97
+      }
+    ],
+    "enrollmentDate": "2018-11-18",
+    "active": true
+  },
+  {
+    "id": "993055196a1bcca736e80163",
+    "firstName": "Kyle",
+    "lastName": "Williams",
+    "email": "kyle.williams10@example.com",
+    "dob": "1996-08-27",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 62
+      },
+      {
+        "name": "Web Development",
+        "marks": 84
+      },
+      {
+        "name": "Networks",
+        "marks": 79
+      }
+    ],
+    "enrollmentDate": "2019-03-15",
+    "active": true
+  },
+  {
+    "id": "446bfe5642dd1ff7af8d4b11",
+    "firstName": "Bob",
+    "lastName": "Rodriguez",
+    "email": "bob.rodriguez28@example.com",
+    "dob": "2001-09-01",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 93
+      },
+      {
+        "name": "Web Development",
+        "marks": 72
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 62
+      },
+      {
+        "name": "Algorithms",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2020-09-12",
+    "active": true
+  },
+  {
+    "id": "6f15bfe0db3d6545e30b0861",
+    "firstName": "Nina",
+    "lastName": "Moore",
+    "email": "nina.moore66@example.com",
+    "dob": "2003-10-04",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 61
+      },
+      {
+        "name": "AI",
+        "marks": 87
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 50
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2019-08-11",
+    "active": true
+  },
+  {
+    "id": "2cc5401a1cd7173d2594053c",
+    "firstName": "Quincy",
+    "lastName": "Martinez",
+    "email": "quincy.martinez94@example.com",
+    "dob": "2002-10-26",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 98
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 53
+      },
+      {
+        "name": "AI",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2018-07-18",
+    "active": true
+  },
+  {
+    "id": "9c780bba32761c780609b0c5",
+    "firstName": "Hannah",
+    "lastName": "Thomas",
+    "email": "hannah.thomas72@example.com",
+    "dob": "2002-01-19",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 85
+      },
+      {
+        "name": "AI",
+        "marks": 64
+      },
+      {
+        "name": "Networks",
+        "marks": 71
+      },
+      {
+        "name": "Web Development",
+        "marks": 73
+      }
+    ],
+    "enrollmentDate": "2017-08-05",
+    "active": true
+  },
+  {
+    "id": "4bdc56cebd3400895d9abf1c",
+    "firstName": "Rachel",
+    "lastName": "Jackson",
+    "email": "rachel.jackson43@example.com",
+    "dob": "2005-09-20",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 50
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 62
+      },
+      {
+        "name": "Databases",
+        "marks": 84
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 50
+      },
+      {
+        "name": "Web Development",
+        "marks": 69
+      }
+    ],
+    "enrollmentDate": "2019-12-09",
+    "active": false
+  },
+  {
+    "id": "f9d9d810a94e7ee2158e2124",
+    "firstName": "Tina",
+    "lastName": "Davis",
+    "email": "tina.davis60@example.com",
+    "dob": "2000-04-26",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 95
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 81
+      },
+      {
+        "name": "Data Structures",
+        "marks": 91
+      },
+      {
+        "name": "AI",
+        "marks": 75
+      }
+    ],
+    "enrollmentDate": "2017-05-04",
+    "active": false
+  },
+  {
+    "id": "44989221c2568d36b264079c",
+    "firstName": "Bob",
+    "lastName": "Garcia",
+    "email": "bob.garcia92@example.com",
+    "dob": "2000-02-06",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 70
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 54
+      },
+      {
+        "name": "Algorithms",
+        "marks": 91
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 61
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 94
+      }
+    ],
+    "enrollmentDate": "2020-04-20",
+    "active": true
+  },
+  {
+    "id": "e5926240606edcd2999708e0",
+    "firstName": "Alice",
+    "lastName": "Miller",
+    "email": "alice.miller84@example.com",
+    "dob": "1995-03-28",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 97
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 98
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 53
+      }
+    ],
+    "enrollmentDate": "2017-12-18",
+    "active": true
+  },
+  {
+    "id": "e6b3c10f7d654ab0d035f7fd",
+    "firstName": "Sam",
+    "lastName": "Wilson",
+    "email": "sam.wilson24@example.com",
+    "dob": "2005-08-19",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 55
+      },
+      {
+        "name": "Data Structures",
+        "marks": 89
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 53
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 99
+      },
+      {
+        "name": "AI",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2015-06-22",
+    "active": true
+  },
+  {
+    "id": "cf43cc16c2dcd0f64c8852b2",
+    "firstName": "Hannah",
+    "lastName": "Moore",
+    "email": "hannah.moore99@example.com",
+    "dob": "1998-01-10",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 76
+      },
+      {
+        "name": "Data Structures",
+        "marks": 98
+      },
+      {
+        "name": "AI",
+        "marks": 87
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 59
+      }
+    ],
+    "enrollmentDate": "2019-11-16",
+    "active": true
+  },
+  {
+    "id": "88adaad4e4ebb0dfa1a83e1c",
+    "firstName": "Sam",
+    "lastName": "Hernandez",
+    "email": "sam.hernandez29@example.com",
+    "dob": "2005-07-24",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 91
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 84
+      },
+      {
+        "name": "Algorithms",
+        "marks": 87
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 90
+      }
+    ],
+    "enrollmentDate": "2016-12-23",
+    "active": true
+  },
+  {
+    "id": "1485634a7d1bfefbfb71a705",
+    "firstName": "Paul",
+    "lastName": "Lopez",
+    "email": "paul.lopez14@example.com",
+    "dob": "2005-03-04",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 88
+      },
+      {
+        "name": "AI",
+        "marks": 65
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 67
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 64
+      },
+      {
+        "name": "Databases",
+        "marks": 56
+      }
+    ],
+    "enrollmentDate": "2016-07-03",
+    "active": true
+  },
+  {
+    "id": "6812946a446c14df559202c3",
+    "firstName": "Sam",
+    "lastName": "Taylor",
+    "email": "sam.taylor69@example.com",
+    "dob": "2005-08-28",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 62
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 85
+      },
+      {
+        "name": "Databases",
+        "marks": 88
+      },
+      {
+        "name": "Data Structures",
+        "marks": 95
+      }
+    ],
+    "enrollmentDate": "2019-02-24",
+    "active": true
+  },
+  {
+    "id": "9a65d08d91932f8e9d32788a",
+    "firstName": "Nina",
+    "lastName": "Martin",
+    "email": "nina.martin79@example.com",
+    "dob": "1997-12-11",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 69
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 53
+      },
+      {
+        "name": "Algorithms",
+        "marks": 89
+      },
+      {
+        "name": "Web Development",
+        "marks": 86
+      },
+      {
+        "name": "Networks",
+        "marks": 63
+      }
+    ],
+    "enrollmentDate": "2018-06-26",
+    "active": true
+  },
+  {
+    "id": "0e914cf07cc0fed021214fd6",
+    "firstName": "Kyle",
+    "lastName": "Gonzalez",
+    "email": "kyle.gonzalez80@example.com",
+    "dob": "2000-06-02",
+    "department": {
+      "id": "e43a6fd4c9d6f7fce406611b"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 55
+      },
+      {
+        "name": "Web Development",
+        "marks": 100
+      },
+      {
+        "name": "Algorithms",
+        "marks": 79
+      }
+    ],
+    "enrollmentDate": "2017-03-25",
+    "active": true
+  },
+  {
+    "id": "c07d743083555988bf7dc96b",
+    "firstName": "Tina",
+    "lastName": "Williams",
+    "email": "tina.williams77@example.com",
+    "dob": "1995-05-18",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 97
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 94
+      },
+      {
+        "name": "Algorithms",
+        "marks": 58
+      }
+    ],
+    "enrollmentDate": "2015-04-07",
+    "active": true
+  },
+  {
+    "id": "ac1814efafe7fd5ebedb22c3",
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "email": "bob.smith71@example.com",
+    "dob": "2005-06-27",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 100
+      },
+      {
+        "name": "Data Structures",
+        "marks": 84
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 53
+      }
+    ],
+    "enrollmentDate": "2016-11-13",
+    "active": true
+  },
+  {
+    "id": "757c364506049b413571b013",
+    "firstName": "Charlie",
+    "lastName": "Jones",
+    "email": "charlie.jones23@example.com",
+    "dob": "2004-07-15",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 51
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 83
+      },
+      {
+        "name": "AI",
+        "marks": 54
+      }
+    ],
+    "enrollmentDate": "2015-10-19",
+    "active": true
+  },
+  {
+    "id": "a36f888fbfbef990b96d1455",
+    "firstName": "Oliver",
+    "lastName": "Garcia",
+    "email": "oliver.garcia98@example.com",
+    "dob": "2003-05-11",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 96
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 75
+      },
+      {
+        "name": "Databases",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2019-08-17",
+    "active": true
+  },
+  {
+    "id": "9aa34a4302fb48e7cfba3aa4",
+    "firstName": "Michael",
+    "lastName": "Martinez",
+    "email": "michael.martinez31@example.com",
+    "dob": "1998-10-02",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 71
+      },
+      {
+        "name": "Algorithms",
+        "marks": 97
+      },
+      {
+        "name": "Web Development",
+        "marks": 87
+      }
+    ],
+    "enrollmentDate": "2018-05-11",
+    "active": true
+  },
+  {
+    "id": "16628ced76ba6190d5e3be97",
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "email": "alice.johnson23@example.com",
+    "dob": "2005-05-09",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 55
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 68
+      },
+      {
+        "name": "Data Structures",
+        "marks": 60
+      }
+    ],
+    "enrollmentDate": "2015-04-10",
+    "active": true
+  },
+  {
+    "id": "7aa2e3e09b6f3f48e4db2d22",
+    "firstName": "Bob",
+    "lastName": "Williams",
+    "email": "bob.williams49@example.com",
+    "dob": "2002-04-11",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 83
+      },
+      {
+        "name": "Algorithms",
+        "marks": 68
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 94
+      }
+    ],
+    "enrollmentDate": "2020-03-21",
+    "active": true
+  },
+  {
+    "id": "fae81067e09aaf33e8c3a947",
+    "firstName": "David",
+    "lastName": "Martin",
+    "email": "david.martin77@example.com",
+    "dob": "2000-04-21",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 99
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 81
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 94
+      },
+      {
+        "name": "Networks",
+        "marks": 52
+      },
+      {
+        "name": "Algorithms",
+        "marks": 55
+      }
+    ],
+    "enrollmentDate": "2016-07-12",
+    "active": false
+  },
+  {
+    "id": "3b658b456d8af56f62b1fb80",
+    "firstName": "Sam",
+    "lastName": "Davis",
+    "email": "sam.davis67@example.com",
+    "dob": "2005-02-14",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 73
+      },
+      {
+        "name": "Databases",
+        "marks": 69
+      },
+      {
+        "name": "Data Structures",
+        "marks": 89
+      }
+    ],
+    "enrollmentDate": "2015-10-20",
+    "active": true
+  },
+  {
+    "id": "ee964d7088a1a61e83b174e6",
+    "firstName": "Rachel",
+    "lastName": "Jackson",
+    "email": "rachel.jackson59@example.com",
+    "dob": "1999-02-17",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 59
+      },
+      {
+        "name": "Databases",
+        "marks": 78
+      },
+      {
+        "name": "Web Development",
+        "marks": 73
+      },
+      {
+        "name": "AI",
+        "marks": 90
+      }
+    ],
+    "enrollmentDate": "2016-11-01",
+    "active": true
+  },
+  {
+    "id": "f7fe11b5c2a574cb03a5d06e",
+    "firstName": "Quincy",
+    "lastName": "Garcia",
+    "email": "quincy.garcia10@example.com",
+    "dob": "2005-05-10",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 93
+      },
+      {
+        "name": "Networks",
+        "marks": 83
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 54
+      },
+      {
+        "name": "Databases",
+        "marks": 64
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2019-01-27",
+    "active": true
+  },
+  {
+    "id": "364fc24ec4c1dba7ddda20d4",
+    "firstName": "Michael",
+    "lastName": "Lopez",
+    "email": "michael.lopez29@example.com",
+    "dob": "2000-12-01",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 89
+      },
+      {
+        "name": "AI",
+        "marks": 70
+      },
+      {
+        "name": "Web Development",
+        "marks": 53
+      },
+      {
+        "name": "Algorithms",
+        "marks": 60
+      }
+    ],
+    "enrollmentDate": "2017-02-28",
+    "active": false
+  },
+  {
+    "id": "df86d4f3fb2cbfae6e2e05b3",
+    "firstName": "Charlie",
+    "lastName": "Garcia",
+    "email": "charlie.garcia19@example.com",
+    "dob": "1995-10-24",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 61
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 71
+      },
+      {
+        "name": "Web Development",
+        "marks": 92
+      }
+    ],
+    "enrollmentDate": "2016-05-08",
+    "active": true
+  },
+  {
+    "id": "8d377e918dfbb5ab09a7bda7",
+    "firstName": "Oliver",
+    "lastName": "Miller",
+    "email": "oliver.miller51@example.com",
+    "dob": "1997-05-12",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 53
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 96
+      },
+      {
+        "name": "Networks",
+        "marks": 93
+      },
+      {
+        "name": "AI",
+        "marks": 55
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 89
+      }
+    ],
+    "enrollmentDate": "2019-04-07",
+    "active": true
+  },
+  {
+    "id": "06585fd2a767874ebb7e7a5e",
+    "firstName": "David",
+    "lastName": "Gonzalez",
+    "email": "david.gonzalez92@example.com",
+    "dob": "2002-11-26",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 60
+      },
+      {
+        "name": "Data Structures",
+        "marks": 75
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 72
+      },
+      {
+        "name": "Databases",
+        "marks": 73
+      },
+      {
+        "name": "Algorithms",
+        "marks": 54
+      }
+    ],
+    "enrollmentDate": "2017-07-20",
+    "active": true
+  },
+  {
+    "id": "f9315936d4ee122f46e1360c",
+    "firstName": "Rachel",
+    "lastName": "Miller",
+    "email": "rachel.miller66@example.com",
+    "dob": "1999-10-13",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 89
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 67
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 76
+      },
+      {
+        "name": "Databases",
+        "marks": 87
+      }
+    ],
+    "enrollmentDate": "2016-09-25",
+    "active": true
+  },
+  {
+    "id": "46933e0341d5d199fb020611",
+    "firstName": "Hannah",
+    "lastName": "Smith",
+    "email": "hannah.smith32@example.com",
+    "dob": "2003-03-21",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 79
+      },
+      {
+        "name": "Databases",
+        "marks": 76
+      },
+      {
+        "name": "Networks",
+        "marks": 84
+      }
+    ],
+    "enrollmentDate": "2018-11-17",
+    "active": true
+  },
+  {
+    "id": "2cb402e172c6861235c4fcae",
+    "firstName": "Nina",
+    "lastName": "Moore",
+    "email": "nina.moore36@example.com",
+    "dob": "2005-11-18",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 65
+      },
+      {
+        "name": "Data Structures",
+        "marks": 93
+      },
+      {
+        "name": "Web Development",
+        "marks": 100
+      },
+      {
+        "name": "Databases",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2018-01-22",
+    "active": true
+  },
+  {
+    "id": "2baef378795cb2b7832726a5",
+    "firstName": "Eva",
+    "lastName": "Jackson",
+    "email": "eva.jackson11@example.com",
+    "dob": "1995-09-21",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 58
+      },
+      {
+        "name": "Algorithms",
+        "marks": 90
+      },
+      {
+        "name": "Web Development",
+        "marks": 63
+      }
+    ],
+    "enrollmentDate": "2015-02-03",
+    "active": true
+  },
+  {
+    "id": "8fcbca567c7b0b8d534c5e8b",
+    "firstName": "Eva",
+    "lastName": "Garcia",
+    "email": "eva.garcia53@example.com",
+    "dob": "2005-08-07",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 61
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 76
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 76
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 53
+      }
+    ],
+    "enrollmentDate": "2019-01-22",
+    "active": true
+  },
+  {
+    "id": "db3cdc1195b5633215f34832",
+    "firstName": "Frank",
+    "lastName": "Hernandez",
+    "email": "frank.hernandez82@example.com",
+    "dob": "2001-02-24",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 99
+      },
+      {
+        "name": "Algorithms",
+        "marks": 58
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 58
+      },
+      {
+        "name": "Networks",
+        "marks": 84
+      },
+      {
+        "name": "Databases",
+        "marks": 66
+      }
+    ],
+    "enrollmentDate": "2019-10-23",
+    "active": true
+  },
+  {
+    "id": "fc9c00d8e27a79b6f183c6fe",
+    "firstName": "Sam",
+    "lastName": "Hernandez",
+    "email": "sam.hernandez14@example.com",
+    "dob": "1999-08-17",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 80
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 70
+      },
+      {
+        "name": "Databases",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2017-07-21",
+    "active": false
+  },
+  {
+    "id": "72d6c1fbeb91a4f59ea419ba",
+    "firstName": "Rachel",
+    "lastName": "Martinez",
+    "email": "rachel.martinez83@example.com",
+    "dob": "2001-01-22",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 76
+      },
+      {
+        "name": "AI",
+        "marks": 72
+      },
+      {
+        "name": "Data Structures",
+        "marks": 84
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 50
+      },
+      {
+        "name": "Networks",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2017-03-01",
+    "active": true
+  },
+  {
+    "id": "9e460315684b0cb47b2a4d56",
+    "firstName": "Sam",
+    "lastName": "Lopez",
+    "email": "sam.lopez37@example.com",
+    "dob": "2000-05-09",
+    "department": {
+      "id": "48ca6a2e1259442233322ae4"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 95
+      },
+      {
+        "name": "Web Development",
+        "marks": 81
+      },
+      {
+        "name": "AI",
+        "marks": 98
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 79
+      }
+    ],
+    "enrollmentDate": "2016-03-08",
+    "active": true
+  },
+  {
+    "id": "3c4a86a5dd3189a1047d07e1",
+    "firstName": "Tina",
+    "lastName": "Garcia",
+    "email": "tina.garcia20@example.com",
+    "dob": "1995-10-25",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 56
+      },
+      {
+        "name": "Web Development",
+        "marks": 84
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 84
+      },
+      {
+        "name": "Algorithms",
+        "marks": 85
+      }
+    ],
+    "enrollmentDate": "2015-03-25",
+    "active": true
+  },
+  {
+    "id": "c4ff3db69cc317ce3b7b7a6f",
+    "firstName": "Michael",
+    "lastName": "Thomas",
+    "email": "michael.thomas88@example.com",
+    "dob": "1998-01-18",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 100
+      },
+      {
+        "name": "Networks",
+        "marks": 90
+      },
+      {
+        "name": "Databases",
+        "marks": 100
+      }
+    ],
+    "enrollmentDate": "2017-05-16",
+    "active": true
+  },
+  {
+    "id": "03b8ad50abeb64fc019155f1",
+    "firstName": "Ian",
+    "lastName": "Moore",
+    "email": "ian.moore50@example.com",
+    "dob": "1995-09-05",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 96
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 76
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 69
+      },
+      {
+        "name": "Algorithms",
+        "marks": 61
+      }
+    ],
+    "enrollmentDate": "2019-11-08",
+    "active": true
+  },
+  {
+    "id": "e520713b790adf5ba9fd2907",
+    "firstName": "Laura",
+    "lastName": "Moore",
+    "email": "laura.moore52@example.com",
+    "dob": "1996-07-14",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 100
+      },
+      {
+        "name": "Web Development",
+        "marks": 75
+      },
+      {
+        "name": "Databases",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2019-07-07",
+    "active": true
+  },
+  {
+    "id": "4259b52f660b7c4b654f3f68",
+    "firstName": "Nina",
+    "lastName": "Johnson",
+    "email": "nina.johnson29@example.com",
+    "dob": "2000-12-14",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 64
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 70
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 96
+      },
+      {
+        "name": "Web Development",
+        "marks": 78
+      },
+      {
+        "name": "AI",
+        "marks": 70
+      }
+    ],
+    "enrollmentDate": "2020-09-04",
+    "active": true
+  },
+  {
+    "id": "ff5c15357d457c09b22a9915",
+    "firstName": "Frank",
+    "lastName": "Hernandez",
+    "email": "frank.hernandez81@example.com",
+    "dob": "1995-10-24",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 82
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 98
+      },
+      {
+        "name": "Networks",
+        "marks": 60
+      },
+      {
+        "name": "Web Development",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2015-03-06",
+    "active": true
+  },
+  {
+    "id": "e5c69019856bbcfd8b91427b",
+    "firstName": "Quincy",
+    "lastName": "Hernandez",
+    "email": "quincy.hernandez45@example.com",
+    "dob": "1995-06-11",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 80
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 73
+      },
+      {
+        "name": "Networks",
+        "marks": 76
+      },
+      {
+        "name": "Databases",
+        "marks": 100
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 65
+      }
+    ],
+    "enrollmentDate": "2019-02-22",
+    "active": false
+  },
+  {
+    "id": "744d8871ba53fe9a0b183ef8",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith87@example.com",
+    "dob": "1998-07-28",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 99
+      },
+      {
+        "name": "Databases",
+        "marks": 51
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 80
+      }
+    ],
+    "enrollmentDate": "2020-10-25",
+    "active": true
+  },
+  {
+    "id": "47c4870004e833c2604e1034",
+    "firstName": "Nina",
+    "lastName": "Williams",
+    "email": "nina.williams91@example.com",
+    "dob": "1998-02-12",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 53
+      },
+      {
+        "name": "Algorithms",
+        "marks": 78
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 55
+      },
+      {
+        "name": "Networks",
+        "marks": 92
+      },
+      {
+        "name": "AI",
+        "marks": 69
+      }
+    ],
+    "enrollmentDate": "2016-08-20",
+    "active": true
+  },
+  {
+    "id": "8299079a66b38b239cc83c11",
+    "firstName": "Nina",
+    "lastName": "Thomas",
+    "email": "nina.thomas17@example.com",
+    "dob": "2002-08-13",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 75
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 80
+      },
+      {
+        "name": "Networks",
+        "marks": 77
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2017-01-22",
+    "active": true
+  },
+  {
+    "id": "9720f7bcfd7685ce2aee739a",
+    "firstName": "Laura",
+    "lastName": "Williams",
+    "email": "laura.williams99@example.com",
+    "dob": "1999-03-08",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 72
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 78
+      },
+      {
+        "name": "AI",
+        "marks": 62
+      },
+      {
+        "name": "Web Development",
+        "marks": 63
+      }
+    ],
+    "enrollmentDate": "2020-11-12",
+    "active": true
+  },
+  {
+    "id": "86c9c775a44cab35bf1bd9f9",
+    "firstName": "David",
+    "lastName": "Martinez",
+    "email": "david.martinez67@example.com",
+    "dob": "1997-05-10",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 51
+      },
+      {
+        "name": "Data Structures",
+        "marks": 100
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 99
+      },
+      {
+        "name": "Networks",
+        "marks": 50
+      },
+      {
+        "name": "Web Development",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2018-02-17",
+    "active": true
+  },
+  {
+    "id": "ddb69a4d4a84ea81edde7bdd",
+    "firstName": "Kyle",
+    "lastName": "Jones",
+    "email": "kyle.jones34@example.com",
+    "dob": "2003-06-06",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 84
+      },
+      {
+        "name": "Algorithms",
+        "marks": 66
+      },
+      {
+        "name": "Data Structures",
+        "marks": 56
+      }
+    ],
+    "enrollmentDate": "2016-12-24",
+    "active": false
+  },
+  {
+    "id": "4933b1a8443cde2f56f4fe84",
+    "firstName": "Tina",
+    "lastName": "Jackson",
+    "email": "tina.jackson73@example.com",
+    "dob": "1998-03-10",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 51
+      },
+      {
+        "name": "Algorithms",
+        "marks": 52
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 96
+      },
+      {
+        "name": "Data Structures",
+        "marks": 77
+      }
+    ],
+    "enrollmentDate": "2018-03-10",
+    "active": true
+  },
+  {
+    "id": "60fa18677d47b2bee4769999",
+    "firstName": "Sam",
+    "lastName": "Taylor",
+    "email": "sam.taylor40@example.com",
+    "dob": "1999-06-24",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 84
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 78
+      },
+      {
+        "name": "Web Development",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2016-02-06",
+    "active": true
+  },
+  {
+    "id": "3672d037252c90d855cad0be",
+    "firstName": "Nina",
+    "lastName": "Martinez",
+    "email": "nina.martinez86@example.com",
+    "dob": "1998-04-15",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 86
+      },
+      {
+        "name": "Algorithms",
+        "marks": 64
+      },
+      {
+        "name": "AI",
+        "marks": 66
+      }
+    ],
+    "enrollmentDate": "2020-08-08",
+    "active": true
+  },
+  {
+    "id": "2906daeb3ce62fa3b45e468f",
+    "firstName": "Paul",
+    "lastName": "Anderson",
+    "email": "paul.anderson12@example.com",
+    "dob": "1998-04-09",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 85
+      },
+      {
+        "name": "Data Structures",
+        "marks": 51
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 81
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 70
+      }
+    ],
+    "enrollmentDate": "2019-11-06",
+    "active": true
+  },
+  {
+    "id": "ec5b96d3235bc0b720898a98",
+    "firstName": "Laura",
+    "lastName": "Martinez",
+    "email": "laura.martinez90@example.com",
+    "dob": "1999-02-15",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 67
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 55
+      },
+      {
+        "name": "Data Structures",
+        "marks": 87
+      },
+      {
+        "name": "AI",
+        "marks": 63
+      }
+    ],
+    "enrollmentDate": "2015-07-20",
+    "active": true
+  },
+  {
+    "id": "34c0ec2bfd63bf6fed7f2206",
+    "firstName": "David",
+    "lastName": "Martin",
+    "email": "david.martin50@example.com",
+    "dob": "1998-03-22",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 87
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 91
+      },
+      {
+        "name": "Algorithms",
+        "marks": 52
+      },
+      {
+        "name": "AI",
+        "marks": 74
+      }
+    ],
+    "enrollmentDate": "2017-09-19",
+    "active": true
+  },
+  {
+    "id": "8aae328c6d6b9c4fa9e4b487",
+    "firstName": "Bob",
+    "lastName": "Brown",
+    "email": "bob.brown51@example.com",
+    "dob": "2004-05-14",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 64
+      },
+      {
+        "name": "Data Structures",
+        "marks": 94
+      },
+      {
+        "name": "Algorithms",
+        "marks": 90
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 96
+      },
+      {
+        "name": "Networks",
+        "marks": 67
+      }
+    ],
+    "enrollmentDate": "2019-03-27",
+    "active": true
+  },
+  {
+    "id": "22b1f210aee15859e1cb10d4",
+    "firstName": "Grace",
+    "lastName": "Moore",
+    "email": "grace.moore63@example.com",
+    "dob": "2002-12-18",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 74
+      },
+      {
+        "name": "Algorithms",
+        "marks": 78
+      },
+      {
+        "name": "Databases",
+        "marks": 91
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 97
+      }
+    ],
+    "enrollmentDate": "2018-12-18",
+    "active": true
+  },
+  {
+    "id": "ab9b5548626ee2a42a814856",
+    "firstName": "Charlie",
+    "lastName": "Miller",
+    "email": "charlie.miller26@example.com",
+    "dob": "1997-04-06",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 87
+      },
+      {
+        "name": "AI",
+        "marks": 72
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 57
+      }
+    ],
+    "enrollmentDate": "2018-05-14",
+    "active": true
+  },
+  {
+    "id": "f90ef18dcb6e4d0af0779af7",
+    "firstName": "Charlie",
+    "lastName": "Hernandez",
+    "email": "charlie.hernandez41@example.com",
+    "dob": "2000-03-08",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 61
+      },
+      {
+        "name": "Data Structures",
+        "marks": 65
+      },
+      {
+        "name": "Algorithms",
+        "marks": 86
+      },
+      {
+        "name": "Databases",
+        "marks": 77
+      },
+      {
+        "name": "AI",
+        "marks": 54
+      }
+    ],
+    "enrollmentDate": "2015-03-11",
+    "active": true
+  },
+  {
+    "id": "8d477145a9617f02f54b7101",
+    "firstName": "Bob",
+    "lastName": "Miller",
+    "email": "bob.miller62@example.com",
+    "dob": "2003-11-01",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 95
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 100
+      },
+      {
+        "name": "Data Structures",
+        "marks": 65
+      }
+    ],
+    "enrollmentDate": "2019-04-12",
+    "active": true
+  },
+  {
+    "id": "93b3931fd46337304e349522",
+    "firstName": "Eva",
+    "lastName": "Martinez",
+    "email": "eva.martinez85@example.com",
+    "dob": "2005-06-06",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 78
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 78
+      },
+      {
+        "name": "Web Development",
+        "marks": 77
+      },
+      {
+        "name": "Databases",
+        "marks": 100
+      },
+      {
+        "name": "AI",
+        "marks": 97
+      }
+    ],
+    "enrollmentDate": "2016-12-06",
+    "active": false
+  },
+  {
+    "id": "b3219830cac3d85d79ced67e",
+    "firstName": "Paul",
+    "lastName": "Hernandez",
+    "email": "paul.hernandez17@example.com",
+    "dob": "2002-01-12",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 88
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 79
+      },
+      {
+        "name": "AI",
+        "marks": 95
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2019-09-18",
+    "active": true
+  },
+  {
+    "id": "5188a7ac766876320a385f93",
+    "firstName": "Laura",
+    "lastName": "Hernandez",
+    "email": "laura.hernandez21@example.com",
+    "dob": "1996-04-02",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 58
+      },
+      {
+        "name": "Web Development",
+        "marks": 65
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 73
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 66
+      },
+      {
+        "name": "Algorithms",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2016-08-15",
+    "active": true
+  },
+  {
+    "id": "25b4b4328d2d1f23d0b35eb4",
+    "firstName": "Nina",
+    "lastName": "Gonzalez",
+    "email": "nina.gonzalez78@example.com",
+    "dob": "2004-01-22",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 66
+      },
+      {
+        "name": "Web Development",
+        "marks": 61
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2019-07-09",
+    "active": false
+  },
+  {
+    "id": "5089e689ae2fef40135da0d9",
+    "firstName": "Paul",
+    "lastName": "Martinez",
+    "email": "paul.martinez92@example.com",
+    "dob": "2001-08-17",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 59
+      },
+      {
+        "name": "Data Structures",
+        "marks": 70
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 93
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 51
+      }
+    ],
+    "enrollmentDate": "2017-10-17",
+    "active": false
+  },
+  {
+    "id": "f4d23763654cfa431171e9ed",
+    "firstName": "Tina",
+    "lastName": "Anderson",
+    "email": "tina.anderson59@example.com",
+    "dob": "1999-03-11",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 99
+      },
+      {
+        "name": "Algorithms",
+        "marks": 93
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 70
+      },
+      {
+        "name": "Networks",
+        "marks": 83
+      },
+      {
+        "name": "Web Development",
+        "marks": 66
+      }
+    ],
+    "enrollmentDate": "2016-06-04",
+    "active": true
+  },
+  {
+    "id": "f71bebf95a36db60ddd7bdb6",
+    "firstName": "Frank",
+    "lastName": "Martinez",
+    "email": "frank.martinez78@example.com",
+    "dob": "2000-11-22",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 57
+      },
+      {
+        "name": "Data Structures",
+        "marks": 90
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 80
+      },
+      {
+        "name": "Networks",
+        "marks": 55
+      }
+    ],
+    "enrollmentDate": "2020-03-24",
+    "active": false
+  },
+  {
+    "id": "6a352f08fd3ffe40c05cc09c",
+    "firstName": "David",
+    "lastName": "Garcia",
+    "email": "david.garcia78@example.com",
+    "dob": "2000-04-23",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 63
+      },
+      {
+        "name": "Networks",
+        "marks": 98
+      },
+      {
+        "name": "Algorithms",
+        "marks": 68
+      }
+    ],
+    "enrollmentDate": "2020-08-24",
+    "active": true
+  },
+  {
+    "id": "3beb0f136d72b7e604aed87b",
+    "firstName": "Laura",
+    "lastName": "Smith",
+    "email": "laura.smith43@example.com",
+    "dob": "2004-02-21",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 86
+      },
+      {
+        "name": "Networks",
+        "marks": 51
+      },
+      {
+        "name": "Data Structures",
+        "marks": 67
+      }
+    ],
+    "enrollmentDate": "2019-08-12",
+    "active": true
+  },
+  {
+    "id": "5ea106d20e3424a91621e254",
+    "firstName": "Grace",
+    "lastName": "Rodriguez",
+    "email": "grace.rodriguez89@example.com",
+    "dob": "2005-12-20",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 84
+      },
+      {
+        "name": "Networks",
+        "marks": 72
+      },
+      {
+        "name": "Databases",
+        "marks": 62
+      },
+      {
+        "name": "Algorithms",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2019-11-25",
+    "active": false
+  },
+  {
+    "id": "934930a2c5ba97e32f09e41f",
+    "firstName": "Kyle",
+    "lastName": "Wilson",
+    "email": "kyle.wilson83@example.com",
+    "dob": "1996-03-23",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 97
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 69
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 63
+      },
+      {
+        "name": "Databases",
+        "marks": 94
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 61
+      }
+    ],
+    "enrollmentDate": "2018-02-22",
+    "active": false
+  },
+  {
+    "id": "ff46e0cdbfea0f53f9dc01da",
+    "firstName": "Jane",
+    "lastName": "Garcia",
+    "email": "jane.garcia80@example.com",
+    "dob": "2000-01-09",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 52
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 90
+      },
+      {
+        "name": "AI",
+        "marks": 96
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 84
+      }
+    ],
+    "enrollmentDate": "2017-11-18",
+    "active": false
+  },
+  {
+    "id": "b93410edcd16b4ef014f9b4a",
+    "firstName": "Jane",
+    "lastName": "Martin",
+    "email": "jane.martin80@example.com",
+    "dob": "2004-12-09",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 71
+      },
+      {
+        "name": "Networks",
+        "marks": 76
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 88
+      },
+      {
+        "name": "Data Structures",
+        "marks": 68
+      },
+      {
+        "name": "AI",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2018-05-18",
+    "active": true
+  },
+  {
+    "id": "dc3c8ffa1ab7d2da0c3468c0",
+    "firstName": "Paul",
+    "lastName": "Miller",
+    "email": "paul.miller67@example.com",
+    "dob": "2000-12-28",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 61
+      },
+      {
+        "name": "Data Structures",
+        "marks": 83
+      },
+      {
+        "name": "Algorithms",
+        "marks": 94
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 52
+      }
+    ],
+    "enrollmentDate": "2017-01-05",
+    "active": true
+  },
+  {
+    "id": "e80fed490c4499cf1bda5ae8",
+    "firstName": "Oliver",
+    "lastName": "Jones",
+    "email": "oliver.jones83@example.com",
+    "dob": "1999-03-10",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 56
+      },
+      {
+        "name": "Databases",
+        "marks": 74
+      },
+      {
+        "name": "AI",
+        "marks": 74
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 63
+      },
+      {
+        "name": "Networks",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2018-08-16",
+    "active": true
+  },
+  {
+    "id": "1f4aacf6fad0a593101370fe",
+    "firstName": "Kyle",
+    "lastName": "Johnson",
+    "email": "kyle.johnson65@example.com",
+    "dob": "1996-09-17",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 93
+      },
+      {
+        "name": "Data Structures",
+        "marks": 81
+      },
+      {
+        "name": "Web Development",
+        "marks": 82
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 58
+      }
+    ],
+    "enrollmentDate": "2018-12-24",
+    "active": false
+  },
+  {
+    "id": "69a009da349a031817ef8173",
+    "firstName": "David",
+    "lastName": "Rodriguez",
+    "email": "david.rodriguez35@example.com",
+    "dob": "1996-07-26",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 74
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 82
+      },
+      {
+        "name": "Algorithms",
+        "marks": 78
+      },
+      {
+        "name": "Web Development",
+        "marks": 77
+      }
+    ],
+    "enrollmentDate": "2017-07-25",
+    "active": true
+  },
+  {
+    "id": "beaccb346737d06d7d685947",
+    "firstName": "David",
+    "lastName": "Lopez",
+    "email": "david.lopez67@example.com",
+    "dob": "1995-07-11",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 95
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 50
+      },
+      {
+        "name": "Algorithms",
+        "marks": 94
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2017-12-17",
+    "active": true
+  },
+  {
+    "id": "9af37b7dc2364fd76b8e8c0d",
+    "firstName": "Grace",
+    "lastName": "Anderson",
+    "email": "grace.anderson25@example.com",
+    "dob": "2004-12-19",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 77
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 95
+      },
+      {
+        "name": "Databases",
+        "marks": 62
+      },
+      {
+        "name": "Web Development",
+        "marks": 89
+      },
+      {
+        "name": "AI",
+        "marks": 53
+      }
+    ],
+    "enrollmentDate": "2015-11-13",
+    "active": false
+  },
+  {
+    "id": "6ec54809db75a648bb9e92aa",
+    "firstName": "Michael",
+    "lastName": "Martinez",
+    "email": "michael.martinez87@example.com",
+    "dob": "2005-02-24",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 70
+      },
+      {
+        "name": "Data Structures",
+        "marks": 96
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 88
+      },
+      {
+        "name": "AI",
+        "marks": 51
+      },
+      {
+        "name": "Networks",
+        "marks": 73
+      }
+    ],
+    "enrollmentDate": "2015-08-08",
+    "active": true
+  },
+  {
+    "id": "cc947e43012ab7336de1c198",
+    "firstName": "Nina",
+    "lastName": "Miller",
+    "email": "nina.miller70@example.com",
+    "dob": "2003-02-03",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 62
+      },
+      {
+        "name": "Web Development",
+        "marks": 98
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 88
+      }
+    ],
+    "enrollmentDate": "2015-03-28",
+    "active": false
+  },
+  {
+    "id": "bb3b0d5c122e3a49d433005f",
+    "firstName": "Eva",
+    "lastName": "Miller",
+    "email": "eva.miller27@example.com",
+    "dob": "1995-09-21",
+    "department": {
+      "id": "2a42b651595b6adfa58f9f0d"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 79
+      },
+      {
+        "name": "Web Development",
+        "marks": 91
+      },
+      {
+        "name": "Networks",
+        "marks": 85
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 53
+      }
+    ],
+    "enrollmentDate": "2015-07-03",
+    "active": false
+  },
+  {
+    "id": "7fec07a7975361900c570bcf",
+    "firstName": "Tina",
+    "lastName": "Rodriguez",
+    "email": "tina.rodriguez89@example.com",
+    "dob": "2005-07-04",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 97
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 76
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 91
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 80
+      },
+      {
+        "name": "Databases",
+        "marks": 61
+      }
+    ],
+    "enrollmentDate": "2015-11-21",
+    "active": false
+  },
+  {
+    "id": "579606a52135e4cdb6661b2c",
+    "firstName": "Grace",
+    "lastName": "Johnson",
+    "email": "grace.johnson41@example.com",
+    "dob": "2003-03-20",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 78
+      },
+      {
+        "name": "Data Structures",
+        "marks": 61
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 85
+      },
+      {
+        "name": "Algorithms",
+        "marks": 84
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 84
+      }
+    ],
+    "enrollmentDate": "2015-09-12",
+    "active": false
+  },
+  {
+    "id": "2c24a14b83be2f4059cb377a",
+    "firstName": "Quincy",
+    "lastName": "Hernandez",
+    "email": "quincy.hernandez97@example.com",
+    "dob": "2002-12-24",
+    "department": {
+      "id": "8eb27d769f312f00d7edf6dd"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 69
+      },
+      {
+        "name": "Web Development",
+        "marks": 70
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 93
+      },
+      {
+        "name": "Databases",
+        "marks": 72
+      }
+    ],
+    "enrollmentDate": "2015-10-25",
+    "active": false
+  },
+  {
+    "id": "337b45060c2694deb5d94b47",
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.johnson83@example.com",
+    "dob": "1999-03-28",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 58
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 87
+      },
+      {
+        "name": "Networks",
+        "marks": 96
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2016-05-27",
+    "active": true
+  },
+  {
+    "id": "f73e54b790fa5cc030a246b1",
+    "firstName": "Sam",
+    "lastName": "Martinez",
+    "email": "sam.martinez12@example.com",
+    "dob": "2000-04-05",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 66
+      },
+      {
+        "name": "AI",
+        "marks": 67
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 93
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 77
+      }
+    ],
+    "enrollmentDate": "2020-01-28",
+    "active": false
+  },
+  {
+    "id": "3499607a5b206d31747af274",
+    "firstName": "David",
+    "lastName": "Martinez",
+    "email": "david.martinez59@example.com",
+    "dob": "2002-12-11",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 74
+      },
+      {
+        "name": "AI",
+        "marks": 50
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 72
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2018-08-01",
+    "active": true
+  },
+  {
+    "id": "22956faa28651e0704473415",
+    "firstName": "Charlie",
+    "lastName": "Williams",
+    "email": "charlie.williams80@example.com",
+    "dob": "2003-03-09",
+    "department": {
+      "id": "71bb6ac010056ccd4d7becfd"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 71
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 77
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 96
+      },
+      {
+        "name": "Algorithms",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2019-11-03",
+    "active": true
+  },
+  {
+    "id": "f69461e163aea782370b9c26",
+    "firstName": "Nina",
+    "lastName": "Hernandez",
+    "email": "nina.hernandez45@example.com",
+    "dob": "2003-06-19",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 86
+      },
+      {
+        "name": "Databases",
+        "marks": 86
+      },
+      {
+        "name": "AI",
+        "marks": 83
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 73
+      }
+    ],
+    "enrollmentDate": "2019-03-18",
+    "active": true
+  },
+  {
+    "id": "0d7ed0f0536a05db9c42dc57",
+    "firstName": "Charlie",
+    "lastName": "Brown",
+    "email": "charlie.brown71@example.com",
+    "dob": "1997-06-22",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 77
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 97
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 86
+      },
+      {
+        "name": "Databases",
+        "marks": 50
+      }
+    ],
+    "enrollmentDate": "2019-11-27",
+    "active": true
+  },
+  {
+    "id": "a836c2f90de7f6e4fb1dba9a",
+    "firstName": "David",
+    "lastName": "Williams",
+    "email": "david.williams54@example.com",
+    "dob": "2005-05-23",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 69
+      },
+      {
+        "name": "Data Structures",
+        "marks": 58
+      },
+      {
+        "name": "AI",
+        "marks": 95
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 75
+      }
+    ],
+    "enrollmentDate": "2018-05-01",
+    "active": true
+  },
+  {
+    "id": "9d5b4d9ee2e7330b1fedce30",
+    "firstName": "Grace",
+    "lastName": "Moore",
+    "email": "grace.moore84@example.com",
+    "dob": "1996-08-13",
+    "department": {
+      "id": "2a5e428841f2827ac5927755"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 53
+      },
+      {
+        "name": "Algorithms",
+        "marks": 61
+      },
+      {
+        "name": "Web Development",
+        "marks": 69
+      }
+    ],
+    "enrollmentDate": "2020-10-02",
+    "active": true
+  },
+  {
+    "id": "cf4b8bac9ac0d87f93bff026",
+    "firstName": "Eva",
+    "lastName": "Gonzalez",
+    "email": "eva.gonzalez49@example.com",
+    "dob": "2004-11-03",
+    "department": {
+      "id": "e43a6fd4c9d6f7fce406611b"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 53
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 98
+      },
+      {
+        "name": "Data Structures",
+        "marks": 61
+      },
+      {
+        "name": "AI",
+        "marks": 69
+      },
+      {
+        "name": "Networks",
+        "marks": 73
+      }
+    ],
+    "enrollmentDate": "2019-03-28",
+    "active": true
+  },
+  {
+    "id": "a4c23d23c618c3232af4dfaf",
+    "firstName": "Sam",
+    "lastName": "Hernandez",
+    "email": "sam.hernandez24@example.com",
+    "dob": "2000-09-06",
+    "department": {
+      "id": "71bb6ac010056ccd4d7becfd"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 69
+      },
+      {
+        "name": "Databases",
+        "marks": 51
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 75
+      }
+    ],
+    "enrollmentDate": "2015-06-16",
+    "active": true
+  },
+  {
+    "id": "7fac807a18b41afaa93316d1",
+    "firstName": "David",
+    "lastName": "Jackson",
+    "email": "david.jackson63@example.com",
+    "dob": "2004-12-12",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 50
+      },
+      {
+        "name": "Web Development",
+        "marks": 79
+      },
+      {
+        "name": "Data Structures",
+        "marks": 95
+      }
+    ],
+    "enrollmentDate": "2016-12-13",
+    "active": true
+  },
+  {
+    "id": "714d76059348629f38ac6931",
+    "firstName": "Frank",
+    "lastName": "Brown",
+    "email": "frank.brown83@example.com",
+    "dob": "1995-11-11",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 98
+      },
+      {
+        "name": "Algorithms",
+        "marks": 80
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 97
+      },
+      {
+        "name": "Networks",
+        "marks": 82
+      }
+    ],
+    "enrollmentDate": "2020-11-22",
+    "active": false
+  },
+  {
+    "id": "a47af980b6ad8fed85b410be",
+    "firstName": "Grace",
+    "lastName": "Garcia",
+    "email": "grace.garcia18@example.com",
+    "dob": "2001-05-13",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 97
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 95
+      },
+      {
+        "name": "Web Development",
+        "marks": 66
+      },
+      {
+        "name": "Networks",
+        "marks": 73
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2017-10-17",
+    "active": false
+  },
+  {
+    "id": "a372f538631d979545f82256",
+    "firstName": "Rachel",
+    "lastName": "Thomas",
+    "email": "rachel.thomas98@example.com",
+    "dob": "2000-10-14",
+    "department": {
+      "id": "71bb6ac010056ccd4d7becfd"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 72
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 72
+      },
+      {
+        "name": "Databases",
+        "marks": 72
+      }
+    ],
+    "enrollmentDate": "2018-06-22",
+    "active": true
+  },
+  {
+    "id": "131f8fec13b3826747cf8e58",
+    "firstName": "Oliver",
+    "lastName": "Taylor",
+    "email": "oliver.taylor55@example.com",
+    "dob": "1997-10-13",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 89
+      },
+      {
+        "name": "AI",
+        "marks": 80
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 52
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 90
+      }
+    ],
+    "enrollmentDate": "2016-02-03",
+    "active": true
+  },
+  {
+    "id": "afbe03f3bcb176102ccaa79a",
+    "firstName": "Paul",
+    "lastName": "Miller",
+    "email": "paul.miller46@example.com",
+    "dob": "2003-09-14",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 70
+      },
+      {
+        "name": "Networks",
+        "marks": 68
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 62
+      }
+    ],
+    "enrollmentDate": "2018-12-22",
+    "active": false
+  },
+  {
+    "id": "0a83e5e1b0942815f9fae64f",
+    "firstName": "Kyle",
+    "lastName": "Davis",
+    "email": "kyle.davis18@example.com",
+    "dob": "1997-06-08",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 53
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 61
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 99
+      },
+      {
+        "name": "Databases",
+        "marks": 62
+      }
+    ],
+    "enrollmentDate": "2016-06-06",
+    "active": true
+  },
+  {
+    "id": "6ea04e151fc4899bf2b320ce",
+    "firstName": "Eva",
+    "lastName": "Martinez",
+    "email": "eva.martinez60@example.com",
+    "dob": "1997-05-03",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 51
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 73
+      },
+      {
+        "name": "Databases",
+        "marks": 77
+      },
+      {
+        "name": "Data Structures",
+        "marks": 80
+      }
+    ],
+    "enrollmentDate": "2018-01-09",
+    "active": true
+  },
+  {
+    "id": "8dafdc63e07c6bec4245cf8d",
+    "firstName": "Ian",
+    "lastName": "Thomas",
+    "email": "ian.thomas73@example.com",
+    "dob": "2004-11-02",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 96
+      },
+      {
+        "name": "Data Structures",
+        "marks": 99
+      },
+      {
+        "name": "Networks",
+        "marks": 83
+      },
+      {
+        "name": "AI",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2020-06-22",
+    "active": true
+  },
+  {
+    "id": "6b8967c6d8f0924984de7b96",
+    "firstName": "Grace",
+    "lastName": "Gonzalez",
+    "email": "grace.gonzalez23@example.com",
+    "dob": "1996-12-25",
+    "department": {
+      "id": "3d43da08479a12cdc4bd3628"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 51
+      },
+      {
+        "name": "Databases",
+        "marks": 88
+      },
+      {
+        "name": "Data Structures",
+        "marks": 87
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 88
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 78
+      }
+    ],
+    "enrollmentDate": "2020-01-11",
+    "active": true
+  },
+  {
+    "id": "2f9566c4112f1e1fbd48fac5",
+    "firstName": "Michael",
+    "lastName": "Thomas",
+    "email": "michael.thomas88@example.com",
+    "dob": "2005-09-27",
+    "department": {
+      "id": "48d8387b4921706c428025f7"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 68
+      },
+      {
+        "name": "Networks",
+        "marks": 52
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 93
+      }
+    ],
+    "enrollmentDate": "2015-07-27",
+    "active": true
+  },
+  {
+    "id": "811c42ed4436baf1bd4e07bb",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith48@example.com",
+    "dob": "2002-05-24",
+    "department": {
+      "id": "71bb6ac010056ccd4d7becfd"
+    },
+    "courses": [
+      {
+        "name": "Data Structures",
+        "marks": 61
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 100
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 94
+      }
+    ],
+    "enrollmentDate": "2018-09-19",
+    "active": false
+  },
+  {
+    "id": "c06619fc5c45a3f649673f7b",
+    "firstName": "Oliver",
+    "lastName": "Taylor",
+    "email": "oliver.taylor42@example.com",
+    "dob": "2004-08-26",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 91
+      },
+      {
+        "name": "AI",
+        "marks": 96
+      },
+      {
+        "name": "Networks",
+        "marks": 59
+      }
+    ],
+    "enrollmentDate": "2015-01-02",
+    "active": true
+  },
+  {
+    "id": "edd5d04de28980a5eba4e21d",
+    "firstName": "Michael",
+    "lastName": "Anderson",
+    "email": "michael.anderson55@example.com",
+    "dob": "1995-07-22",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 69
+      },
+      {
+        "name": "Web Development",
+        "marks": 58
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 87
+      },
+      {
+        "name": "Data Structures",
+        "marks": 88
+      },
+      {
+        "name": "Networks",
+        "marks": 54
+      }
+    ],
+    "enrollmentDate": "2015-02-21",
+    "active": true
+  },
+  {
+    "id": "285227f601f46892bda746fc",
+    "firstName": "Rachel",
+    "lastName": "Martin",
+    "email": "rachel.martin14@example.com",
+    "dob": "2001-09-19",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 65
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 96
+      },
+      {
+        "name": "Data Structures",
+        "marks": 82
+      },
+      {
+        "name": "Algorithms",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2015-03-18",
+    "active": true
+  },
+  {
+    "id": "0d63566935ae96042df120c7",
+    "firstName": "Ian",
+    "lastName": "Davis",
+    "email": "ian.davis73@example.com",
+    "dob": "2000-04-27",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 97
+      },
+      {
+        "name": "Data Structures",
+        "marks": 84
+      },
+      {
+        "name": "Web Development",
+        "marks": 89
+      },
+      {
+        "name": "Networks",
+        "marks": 81
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 57
+      }
+    ],
+    "enrollmentDate": "2020-10-19",
+    "active": true
+  },
+  {
+    "id": "da18aa086bb05ea0d426fdc6",
+    "firstName": "Hannah",
+    "lastName": "Moore",
+    "email": "hannah.moore98@example.com",
+    "dob": "2004-05-20",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 67
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 86
+      },
+      {
+        "name": "Web Development",
+        "marks": 96
+      },
+      {
+        "name": "AI",
+        "marks": 59
+      }
+    ],
+    "enrollmentDate": "2020-03-03",
+    "active": true
+  },
+  {
+    "id": "49473f5047ee14c4caa80996",
+    "firstName": "Eva",
+    "lastName": "Wilson",
+    "email": "eva.wilson55@example.com",
+    "dob": "2005-09-18",
+    "department": {
+      "id": "48ca6a2e1259442233322ae4"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 52
+      },
+      {
+        "name": "Web Development",
+        "marks": 77
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 89
+      }
+    ],
+    "enrollmentDate": "2015-01-21",
+    "active": true
+  },
+  {
+    "id": "48ee9a6dc357ecdab5825d30",
+    "firstName": "David",
+    "lastName": "Rodriguez",
+    "email": "david.rodriguez56@example.com",
+    "dob": "1999-08-13",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 58
+      },
+      {
+        "name": "Algorithms",
+        "marks": 92
+      },
+      {
+        "name": "Databases",
+        "marks": 69
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 90
+      },
+      {
+        "name": "AI",
+        "marks": 78
+      }
+    ],
+    "enrollmentDate": "2019-02-22",
+    "active": false
+  },
+  {
+    "id": "9004ea53d0661884decdaccb",
+    "firstName": "David",
+    "lastName": "Lopez",
+    "email": "david.lopez56@example.com",
+    "dob": "1996-08-04",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 82
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 53
+      },
+      {
+        "name": "Data Structures",
+        "marks": 83
+      }
+    ],
+    "enrollmentDate": "2017-11-10",
+    "active": true
+  },
+  {
+    "id": "68b17bd487a9225def11bb81",
+    "firstName": "Frank",
+    "lastName": "Garcia",
+    "email": "frank.garcia46@example.com",
+    "dob": "1997-12-07",
+    "department": {
+      "id": "91e4d5ada65b08f931e2957e"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 87
+      },
+      {
+        "name": "Web Development",
+        "marks": 73
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 72
+      }
+    ],
+    "enrollmentDate": "2015-02-02",
+    "active": true
+  },
+  {
+    "id": "152486e0ee9d51e46ce2e580",
+    "firstName": "Michael",
+    "lastName": "Taylor",
+    "email": "michael.taylor22@example.com",
+    "dob": "1998-10-02",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 80
+      },
+      {
+        "name": "AI",
+        "marks": 57
+      },
+      {
+        "name": "Web Development",
+        "marks": 54
+      }
+    ],
+    "enrollmentDate": "2018-12-23",
+    "active": true
+  },
+  {
+    "id": "b6e5293d20084f9ad26901f1",
+    "firstName": "Charlie",
+    "lastName": "Rodriguez",
+    "email": "charlie.rodriguez70@example.com",
+    "dob": "1996-02-24",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 50
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 64
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 55
+      },
+      {
+        "name": "Databases",
+        "marks": 79
+      },
+      {
+        "name": "Networks",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2020-01-13",
+    "active": true
+  },
+  {
+    "id": "7e69eb21129b4062b7d2bb80",
+    "firstName": "Jane",
+    "lastName": "Lopez",
+    "email": "jane.lopez26@example.com",
+    "dob": "1998-08-06",
+    "department": {
+      "id": "71bb6ac010056ccd4d7becfd"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 77
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 80
+      },
+      {
+        "name": "Databases",
+        "marks": 78
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 53
+      },
+      {
+        "name": "Web Development",
+        "marks": 95
+      }
+    ],
+    "enrollmentDate": "2015-08-20",
+    "active": true
+  },
+  {
+    "id": "2861e3335ee9e5b59dc407b7",
+    "firstName": "Kyle",
+    "lastName": "Moore",
+    "email": "kyle.moore84@example.com",
+    "dob": "2000-11-24",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 86
+      },
+      {
+        "name": "Networks",
+        "marks": 59
+      },
+      {
+        "name": "Data Structures",
+        "marks": 92
+      }
+    ],
+    "enrollmentDate": "2016-10-20",
+    "active": true
+  },
+  {
+    "id": "302d906656d53384eb2a63ad",
+    "firstName": "Sam",
+    "lastName": "Jones",
+    "email": "sam.jones60@example.com",
+    "dob": "1996-08-06",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 75
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 71
+      },
+      {
+        "name": "Data Structures",
+        "marks": 78
+      },
+      {
+        "name": "AI",
+        "marks": 61
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 70
+      }
+    ],
+    "enrollmentDate": "2020-07-28",
+    "active": false
+  },
+  {
+    "id": "369753bfa4577b4396da3dee",
+    "firstName": "Ian",
+    "lastName": "Gonzalez",
+    "email": "ian.gonzalez27@example.com",
+    "dob": "2002-01-13",
+    "department": {
+      "id": "2c0fb1628c35c2deae56a80d"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 99
+      },
+      {
+        "name": "Algorithms",
+        "marks": 86
+      },
+      {
+        "name": "Web Development",
+        "marks": 51
+      }
+    ],
+    "enrollmentDate": "2017-01-03",
+    "active": false
+  },
+  {
+    "id": "8f9e21202d9eb35e594cdb19",
+    "firstName": "David",
+    "lastName": "Johnson",
+    "email": "david.johnson16@example.com",
+    "dob": "1998-07-06",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 82
+      },
+      {
+        "name": "Algorithms",
+        "marks": 100
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 52
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2015-10-08",
+    "active": true
+  },
+  {
+    "id": "262fc1787fbb4587a3bbc1ff",
+    "firstName": "Kyle",
+    "lastName": "Moore",
+    "email": "kyle.moore35@example.com",
+    "dob": "2002-12-21",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 69
+      },
+      {
+        "name": "Databases",
+        "marks": 50
+      },
+      {
+        "name": "Data Structures",
+        "marks": 82
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 52
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 56
+      }
+    ],
+    "enrollmentDate": "2015-01-01",
+    "active": true
+  },
+  {
+    "id": "da48df9db44872d08328a8f4",
+    "firstName": "Jane",
+    "lastName": "Hernandez",
+    "email": "jane.hernandez79@example.com",
+    "dob": "1997-12-13",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 65
+      },
+      {
+        "name": "AI",
+        "marks": 76
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 96
+      }
+    ],
+    "enrollmentDate": "2018-06-11",
+    "active": true
+  },
+  {
+    "id": "5e4dc127ebc06350bd969fc8",
+    "firstName": "Sam",
+    "lastName": "Thomas",
+    "email": "sam.thomas58@example.com",
+    "dob": "1998-09-11",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 70
+      },
+      {
+        "name": "Databases",
+        "marks": 86
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 63
+      }
+    ],
+    "enrollmentDate": "2016-04-25",
+    "active": true
+  },
+  {
+    "id": "31bcf600b8bf148657348548",
+    "firstName": "Frank",
+    "lastName": "Taylor",
+    "email": "frank.taylor86@example.com",
+    "dob": "2000-06-18",
+    "department": {
+      "id": "0dec2e4b1bb920eba24d53db"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 91
+      },
+      {
+        "name": "Algorithms",
+        "marks": 98
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 90
+      }
+    ],
+    "enrollmentDate": "2016-09-15",
+    "active": true
+  },
+  {
+    "id": "8ea88e367cc88efdf5b5e1b5",
+    "firstName": "Alice",
+    "lastName": "Rodriguez",
+    "email": "alice.rodriguez58@example.com",
+    "dob": "2003-01-01",
+    "department": {
+      "id": "4af002277d47aa02a9784477"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 77
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 77
+      },
+      {
+        "name": "Databases",
+        "marks": 52
+      }
+    ],
+    "enrollmentDate": "2015-06-07",
+    "active": true
+  },
+  {
+    "id": "3de25286c5de2c92ba2a57cd",
+    "firstName": "Michael",
+    "lastName": "Davis",
+    "email": "michael.davis37@example.com",
+    "dob": "1999-12-05",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "Networks",
+        "marks": 74
+      },
+      {
+        "name": "Data Structures",
+        "marks": 95
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 98
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 66
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 72
+      }
+    ],
+    "enrollmentDate": "2020-10-11",
+    "active": true
+  },
+  {
+    "id": "83a3d021fa0bc8e301e6811f",
+    "firstName": "Bob",
+    "lastName": "Lopez",
+    "email": "bob.lopez26@example.com",
+    "dob": "1999-05-20",
+    "department": {
+      "id": "0d79c828783652105ef0d69c"
+    },
+    "courses": [
+      {
+        "name": "Operating Systems",
+        "marks": 97
+      },
+      {
+        "name": "AI",
+        "marks": 74
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 79
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 99
+      }
+    ],
+    "enrollmentDate": "2016-07-19",
+    "active": true
+  },
+  {
+    "id": "e97d6517260de3c042f722e8",
+    "firstName": "Michael",
+    "lastName": "Moore",
+    "email": "michael.moore44@example.com",
+    "dob": "2005-02-16",
+    "department": {
+      "id": "65935f3e24ba24482269dfd4"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 50
+      },
+      {
+        "name": "Data Structures",
+        "marks": 76
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 69
+      },
+      {
+        "name": "Algorithms",
+        "marks": 60
+      },
+      {
+        "name": "Web Development",
+        "marks": 69
+      }
+    ],
+    "enrollmentDate": "2017-12-19",
+    "active": true
+  },
+  {
+    "id": "79858ec150fdefcfd45339bd",
+    "firstName": "Frank",
+    "lastName": "Garcia",
+    "email": "frank.garcia66@example.com",
+    "dob": "2004-10-04",
+    "department": {
+      "id": "be7f70b931c1885fbd22e413"
+    },
+    "courses": [
+      {
+        "name": "Databases",
+        "marks": 68
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 83
+      },
+      {
+        "name": "AI",
+        "marks": 64
+      },
+      {
+        "name": "Web Development",
+        "marks": 54
+      },
+      {
+        "name": "Software Engineering",
+        "marks": 94
+      }
+    ],
+    "enrollmentDate": "2017-01-11",
+    "active": true
+  },
+  {
+    "id": "7c11938f8bc1ed2879703f12",
+    "firstName": "Frank",
+    "lastName": "Lopez",
+    "email": "frank.lopez53@example.com",
+    "dob": "1995-12-06",
+    "department": {
+      "id": "71bb6ac010056ccd4d7becfd"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 82
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 94
+      },
+      {
+        "name": "Networks",
+        "marks": 86
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 63
+      }
+    ],
+    "enrollmentDate": "2018-01-18",
+    "active": true
+  },
+  {
+    "id": "44f517dcbb394556e6cae4a1",
+    "firstName": "David",
+    "lastName": "Garcia",
+    "email": "david.garcia99@example.com",
+    "dob": "1997-08-27",
+    "department": {
+      "id": "f1775d486ae1579bab8a6036"
+    },
+    "courses": [
+      {
+        "name": "Mobile Development",
+        "marks": 68
+      },
+      {
+        "name": "Web Development",
+        "marks": 77
+      },
+      {
+        "name": "Machine Learning",
+        "marks": 81
+      }
+    ],
+    "enrollmentDate": "2020-02-20",
+    "active": true
+  },
+  {
+    "id": "3411f31c3acc88efa4e202c6",
+    "firstName": "Grace",
+    "lastName": "Williams",
+    "email": "grace.williams78@example.com",
+    "dob": "1998-11-01",
+    "department": {
+      "id": "e664d55d567c76bf5e7b5ff7"
+    },
+    "courses": [
+      {
+        "name": "Machine Learning",
+        "marks": 52
+      },
+      {
+        "name": "Operating Systems",
+        "marks": 81
+      },
+      {
+        "name": "Algorithms",
+        "marks": 73
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 73
+      }
+    ],
+    "enrollmentDate": "2018-05-21",
+    "active": false
+  },
+  {
+    "id": "923c65e1c0246bb4771be201",
+    "firstName": "Alice",
+    "lastName": "Martinez",
+    "email": "alice.martinez61@example.com",
+    "dob": "1997-06-19",
+    "department": {
+      "id": "e43a6fd4c9d6f7fce406611b"
+    },
+    "courses": [
+      {
+        "name": "Software Engineering",
+        "marks": 84
+      },
+      {
+        "name": "Algorithms",
+        "marks": 66
+      },
+      {
+        "name": "Web Development",
+        "marks": 80
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 68
+      }
+    ],
+    "enrollmentDate": "2018-03-17",
+    "active": true
+  },
+  {
+    "id": "3a92522f9f8d051762c91bbc",
+    "firstName": "Jane",
+    "lastName": "Jones",
+    "email": "jane.jones59@example.com",
+    "dob": "2003-05-20",
+    "department": {
+      "id": "d9144f9cb552abd61617f51b"
+    },
+    "courses": [
+      {
+        "name": "AI",
+        "marks": 88
+      },
+      {
+        "name": "Algorithms",
+        "marks": 59
+      },
+      {
+        "name": "Web Development",
+        "marks": 73
+      },
+      {
+        "name": "Mobile Development",
+        "marks": 86
+      }
+    ],
+    "enrollmentDate": "2020-04-14",
+    "active": false
+  },
+  {
+    "id": "7539935b6a6cda38a3db97cc",
+    "firstName": "Quincy",
+    "lastName": "Johnson",
+    "email": "quincy.johnson91@example.com",
+    "dob": "2003-04-14",
+    "department": {
+      "id": "efc701f24949a64a3d0bb20d"
+    },
+    "courses": [
+      {
+        "name": "Web Development",
+        "marks": 68
+      },
+      {
+        "name": "Databases",
+        "marks": 65
+      },
+      {
+        "name": "Data Structures",
+        "marks": 91
+      }
+    ],
+    "enrollmentDate": "2020-05-11",
+    "active": true
+  },
+  {
+    "id": "0a3c69122effbc2a5ca020fc",
+    "firstName": "Hannah",
+    "lastName": "Miller",
+    "email": "hannah.miller40@example.com",
+    "dob": "2005-06-16",
+    "department": {
+      "id": "90f14b9e69cc4b27fed96f36"
+    },
+    "courses": [
+      {
+        "name": "Algorithms",
+        "marks": 78
+      },
+      {
+        "name": "AI",
+        "marks": 78
+      },
+      {
+        "name": "Data Structures",
+        "marks": 52
+      },
+      {
+        "name": "Web Development",
+        "marks": 78
+      }
+    ],
+    "enrollmentDate": "2017-09-23",
+    "active": true
+  }
+]

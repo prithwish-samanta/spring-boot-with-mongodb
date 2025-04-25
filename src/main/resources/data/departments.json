@@ -1,0 +1,122 @@
+[
+  {
+    "id": "0d79c828783652105ef0d69c",
+    "name": "Computer Science",
+    "location": "Block A",
+    "createdAt": "1985-01-01"
+  },
+  {
+    "id": "71bb6ac010056ccd4d7becfd",
+    "name": "Electrical Engineering",
+    "location": "Block B",
+    "createdAt": "1986-02-04"
+  },
+  {
+    "id": "0dec2e4b1bb920eba24d53db",
+    "name": "Mechanical Engineering",
+    "location": "Block C",
+    "createdAt": "1987-03-07"
+  },
+  {
+    "id": "3d43da08479a12cdc4bd3628",
+    "name": "Civil Engineering",
+    "location": "Block D",
+    "createdAt": "1988-04-10"
+  },
+  {
+    "id": "d9144f9cb552abd61617f51b",
+    "name": "Chemical Engineering",
+    "location": "Block E",
+    "createdAt": "1989-05-13"
+  },
+  {
+    "id": "e664d55d567c76bf5e7b5ff7",
+    "name": "Biology",
+    "location": "Block F",
+    "createdAt": "1990-06-16"
+  },
+  {
+    "id": "efc701f24949a64a3d0bb20d",
+    "name": "Chemistry",
+    "location": "Block G",
+    "createdAt": "1991-07-19"
+  },
+  {
+    "id": "be7f70b931c1885fbd22e413",
+    "name": "Physics",
+    "location": "Block H",
+    "createdAt": "1992-08-22"
+  },
+  {
+    "id": "2c0fb1628c35c2deae56a80d",
+    "name": "Mathematics",
+    "location": "Block I",
+    "createdAt": "1993-09-25"
+  },
+  {
+    "id": "e43a6fd4c9d6f7fce406611b",
+    "name": "Economics",
+    "location": "Block J",
+    "createdAt": "1994-10-28"
+  },
+  {
+    "id": "4af002277d47aa02a9784477",
+    "name": "History",
+    "location": "Block K",
+    "createdAt": "1995-11-03"
+  },
+  {
+    "id": "65935f3e24ba24482269dfd4",
+    "name": "English",
+    "location": "Block L",
+    "createdAt": "1996-12-06"
+  },
+  {
+    "id": "2a5e428841f2827ac5927755",
+    "name": "Business Administration",
+    "location": "Block M",
+    "createdAt": "1997-01-09"
+  },
+  {
+    "id": "90f14b9e69cc4b27fed96f36",
+    "name": "Psychology",
+    "location": "Block N",
+    "createdAt": "1998-02-12"
+  },
+  {
+    "id": "48d8387b4921706c428025f7",
+    "name": "Sociology",
+    "location": "Block O",
+    "createdAt": "1999-03-15"
+  },
+  {
+    "id": "8eb27d769f312f00d7edf6dd",
+    "name": "Philosophy",
+    "location": "Block P",
+    "createdAt": "2000-04-18"
+  },
+  {
+    "id": "48ca6a2e1259442233322ae4",
+    "name": "Art",
+    "location": "Block Q",
+    "createdAt": "2001-05-21"
+  },
+  {
+    "id": "2a42b651595b6adfa58f9f0d",
+    "name": "Music",
+    "location": "Block R",
+    "createdAt": "2002-06-24"
+  },
+  {
+    "id": "f1775d486ae1579bab8a6036",
+    "name": "Law",
+    "location": "Block S",
+    "createdAt": "2003-07-27"
+  },
+  {
+    "id": "91e4d5ada65b08f931e2957e",
+    "name": "Medicine",
+    "location": "Block T",
+    "createdAt": "2004-08-02"
+  }
+]

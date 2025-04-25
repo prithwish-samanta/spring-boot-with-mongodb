@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-boot-with-mongodb
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017/studentdb?authSource=admin
+server:
+  port: 8888

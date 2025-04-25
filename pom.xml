@@ -12,7 +12,7 @@
 	<artifactId>spring-boot-with-mongodb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-with-mongodb</name>
-	<description>A Spring Boot–powered MongoDB application for managing Student and Department entities with embedded course marks, featuring CRUD operations, pagination, sorting, and advanced query capabilities</description>
+	<description>Spring Boot with MongoDB integration for efficient, scalable data management.</description>
 	<url/>
 	<licenses>
 		<license/>

@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -108,6 +110,10 @@ public class Student {
         double sum = courses.stream()
                 .mapToDouble(Course::getMarks)
                 .sum();
-        return sum / courses.size();
+        double average = sum / courses.size();
+        // Round to 2 decimal places
+        percentage = BigDecimal.valueOf(average)
+                .setScale(2, RoundingMode.HALF_UP).doubleValue();
+        return percentage;
     }
 }

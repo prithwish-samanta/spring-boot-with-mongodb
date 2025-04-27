@@ -10,6 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * REST controller for managing Student resources.
  */
@@ -99,5 +103,57 @@ public class ApiController {
         LOG.info("DELETE /api/v1/students/{} - deleteStudent called", id);
         studentService.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/searchByName")
+    public ResponseEntity<Map<String, Object>> search(@RequestParam String name) {
+        LOG.info("GET /api/v1/students/searchByName - search called with name={}", name);
+        List<StudentDTO> students = studentService.searchByName(name);
+        Map<String, Object> res = new HashMap<>();
+        res.put("name", name);
+        res.put("count", students.size());
+        res.put("students", students);
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/active")
+    public ResponseEntity<StudentPageResponse> activeStudents(
+            @RequestParam(value = "page", defaultValue = "1") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /api/v1/students/active - activeStudents called with page={}, size={}, sortField={}, sortDir={}",
+                page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.getActiveStudents(page, size, sortField, sortDir);
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/count-active")
+    public ResponseEntity<Map<String, Integer>> countActiveStudents() {
+        LOG.info("GET /api/v1/students/count-active - countActiveStudents called");
+        Map<String, Integer> res = Map.of("count", studentService.getActiveStudentsCount());
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/exists")
+    public ResponseEntity<Map<String, Boolean>> doesStudentExists(@RequestParam String email) {
+        LOG.info("GET /api/v1/students/exists - doesStudentExists called");
+        Map<String, Boolean> res = Map.of("exists", studentService.isStudentExists(email));
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/by-course")
+    public ResponseEntity<StudentPageResponse> getStudentsByCourse(
+            @RequestParam String courseName,
+            @RequestParam(value = "page", defaultValue = "1") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /api/v1/students/by-course - getStudentsByCourse called with courseName={}, page={}, size={}, sortField={}, sortDir={}",
+                courseName, page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.getStudentByCourse(courseName, page, size, sortField, sortDir);
+        return ResponseEntity.ok(res);
     }
 }

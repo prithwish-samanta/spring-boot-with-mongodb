@@ -78,13 +78,8 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public StudentPageResponse getAll(int page, int size, String sortField, String sortDir) {
-        LOG.info("getAll() called with page={}, size={}, sortField={}, sortDir={}", page, size, sortField, sortDir);
-        // Determine a sort direction: asc → ASC, otherwise DESC
-        Sort.Direction direction = sortDir.equalsIgnoreCase("asc")
-                ? Sort.Direction.ASC
-                : Sort.Direction.DESC;
-        // Build Pageable (convert to zero-based page index)
-        Pageable pageReq = PageRequest.of(page - 1, size, Sort.by(direction, sortField));
+        // Build Page request
+        Pageable pageReq = getPageRequest(page, size, sortField, sortDir);
         // Fetch paged data
         Page<Student> studentPage = studentRepo.findAll(pageReq);
         LOG.debug("Fetched {} students ({} total pages)", studentPage.getNumberOfElements(), studentPage.getTotalPages());
@@ -178,5 +173,58 @@ public class StudentServiceImpl implements StudentService {
         // Perform deletion
         studentRepo.delete(student);
         LOG.info("delete() successful for ID: {}", id);
+    }
+
+    @Override
+    public List<StudentDTO> searchByName(String name) {
+        return studentRepo.getByName(name);
+    }
+
+    @Override
+    public StudentPageResponse getActiveStudents(int page, int size, String sortField, String sortDir) {
+        Pageable pageReq = getPageRequest(page, size, sortField, sortDir);
+        Page<Student> studentPage = studentRepo.findByActiveTrue(pageReq);
+        LOG.debug("Fetched {} active students ({} total pages)", studentPage.getNumberOfElements(), studentPage.getTotalPages());
+        // Map entities to DTOs and wrap in the response object
+        StudentPageResponse response = studentMapper.toPageResponse(studentPage);
+        LOG.info("getActiveStudents() returning page {} of {}, {} items",
+                response.pageNumber() + 1,
+                response.totalPages(),
+                response.content().size());
+        return response;
+    }
+
+    @Override
+    public Integer getActiveStudentsCount() {
+        return studentRepo.countByActiveTrue();
+    }
+
+    @Override
+    public Boolean isStudentExists(String email) {
+        return studentRepo.existsByEmail(email);
+    }
+
+    @Override
+    public StudentPageResponse getStudentByCourse(String courseName, int page, int size, String sortField, String sortDir) {
+        Pageable pageReq = getPageRequest(page, size, sortField, sortDir);
+        Page<Student> studentPage = studentRepo.findByCoursesName(courseName, pageReq);
+        LOG.debug("Fetched {} students ({} total pages)", studentPage.getNumberOfElements(), studentPage.getTotalPages());
+        // Map entities to DTOs and wrap in the response object
+        StudentPageResponse response = studentMapper.toPageResponse(studentPage);
+        LOG.info("getStudentByCourse() returning page {} of {}, {} items",
+                response.pageNumber() + 1,
+                response.totalPages(),
+                response.content().size());
+        return response;
+    }
+
+    private Pageable getPageRequest(int page, int size, String sortField, String sortDir) {
+        LOG.info("getAll() called with page={}, size={}, sortField={}, sortDir={}", page, size, sortField, sortDir);
+        // Determine a sort direction: asc → ASC, otherwise DESC
+        Sort.Direction direction = sortDir.equalsIgnoreCase("asc")
+                ? Sort.Direction.ASC
+                : Sort.Direction.DESC;
+        // Build and return Pageable (convert to zero-based page index)
+        return PageRequest.of(page - 1, size, Sort.by(direction, sortField));
     }
 }

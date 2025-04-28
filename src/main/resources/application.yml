@@ -6,3 +6,6 @@ spring:
       uri: mongodb://root:example@localhost:27017/studentdb?authSource=admin
 server:
   port: 8888
+logging:
+  level:
+    dev.demo.spring_boot_with_mongodb.*: debug

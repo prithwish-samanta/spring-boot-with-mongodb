@@ -62,7 +62,6 @@ class ApiControllerTest {
         StudentDTO req = sampleDto(null, "Alice", "Wong");
         StudentDTO res = sampleDto("abc123", "Alice", "Wong");
         given(studentService.save(any())).willReturn(res);
-
         // when / then
         mvc.perform(post(BASE_URL)
                         .contentType(MediaType.APPLICATION_JSON)
@@ -82,7 +81,6 @@ class ApiControllerTest {
                 List.of(one), 1, 20, 1L, 1, true, true, false, false
         );
         given(studentService.getAll(1, 20, "lastName", "asc")).willReturn(page);
-
         // when / then
         mvc.perform(get(BASE_URL)
                         .param("page", "1")
@@ -101,7 +99,6 @@ class ApiControllerTest {
         // given
         StudentDTO dto = sampleDto("xyz", "Carol", "Jones");
         given(studentService.getById("xyz")).willReturn(dto);
-
         // when / then
         mvc.perform(get(BASE_URL + "/xyz"))
                 .andExpect(status().isOk())
@@ -116,7 +113,6 @@ class ApiControllerTest {
         StudentDTO req = sampleDto(null, "Dan", "Brown");
         StudentDTO updated = sampleDto("u1", "Dan", "Brown");
         given(studentService.update(eq("u1"), any())).willReturn(updated);
-
         // when / then
         mvc.perform(put(BASE_URL + "/u1")
                         .contentType(MediaType.APPLICATION_JSON)
@@ -142,7 +138,6 @@ class ApiControllerTest {
         // given
         StudentDTO a = sampleDto("A1", "Eve", "Lee");
         given(studentService.searchByName("E")).willReturn(List.of(a));
-
         // when / then
         mvc.perform(get(BASE_URL + "/searchByName").param("name", "E"))
                 .andExpect(status().isOk())
@@ -159,7 +154,6 @@ class ApiControllerTest {
                 List.of(active), 1, 20, 1L, 1, true, true, false, false
         );
         given(studentService.getActiveStudents(1, 20, "lastName", "asc")).willReturn(page);
-
         // when / then
         mvc.perform(get(BASE_URL + "/active")
                         .param("page", "1").param("size", "20")
@@ -174,7 +168,6 @@ class ApiControllerTest {
     void countActiveStudents() throws Exception {
         // given
         given(studentService.getActiveStudentsCount()).willReturn(42);
-
         // when / then
         mvc.perform(get(BASE_URL + "/count-active"))
                 .andExpect(status().isOk())
@@ -187,7 +180,6 @@ class ApiControllerTest {
     void doesStudentExists() throws Exception {
         // given
         given(studentService.isStudentExists("x@y.com")).willReturn(true);
-
         // when / then
         mvc.perform(get(BASE_URL + "/exists").param("email", "x@y.com"))
                 .andExpect(status().isOk())
@@ -204,7 +196,6 @@ class ApiControllerTest {
                 List.of(c), 1, 20, 1L, 1, true, true, false, false
         );
         given(studentService.getStudentByCourse("AI", 1, 20, "lastName", "asc")).willReturn(page);
-
         // when / then
         mvc.perform(get(BASE_URL + "/by-course")
                         .param("courseName", "AI")
@@ -224,7 +215,6 @@ class ApiControllerTest {
                 List.of(h), 1, 20, 1L, 1, true, true, false, false
         );
         given(studentService.getHighScorers("AI", 80, 1, 20, "lastName", "asc")).willReturn(page);
-
         // when / then
         mvc.perform(get(BASE_URL + "/high-scorers")
                         .param("courseName", "AI").param("minScore", "80")
@@ -244,7 +234,6 @@ class ApiControllerTest {
                 List.of(d), 1, 20, 1L, 1, true, true, false, false
         );
         given(studentService.getStudentsByDepartment("dept1", 1, 20, "lastName", "asc")).willReturn(page);
-
         // when / then
         mvc.perform(get(BASE_URL + "/by-department/dept1")
                         .param("page", "1").param("size", "20")
@@ -265,7 +254,6 @@ class ApiControllerTest {
         String start = "1990-01-01";
         String end = "2000-12-31";
         given(studentService.getStudentsBornBetween(LocalDate.parse(start), LocalDate.parse(end), 1, 20, "dob", "asc")).willReturn(page);
-
         // when / then
         mvc.perform(get(BASE_URL + "/born-between")
                         .param("start", start)
@@ -283,7 +271,6 @@ class ApiControllerTest {
         // given
         StudentDTO r = sampleDto("r1", "Leo", "Ngy");
         given(studentService.getRecentEnrollments()).willReturn(List.of(r));
-
         // when / then
         mvc.perform(get(BASE_URL + "/recent-enrollments"))
                 .andExpect(status().isOk())

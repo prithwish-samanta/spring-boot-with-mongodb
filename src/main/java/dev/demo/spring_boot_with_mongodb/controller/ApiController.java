@@ -260,7 +260,7 @@ public class ApiController {
     ) {
         LOG.info("GET /api/v1/students/by-department/{} - getStudentsByDepartment called with page={}, size={}, sortField={}, sortDir={}",
                 deptId, page, size, sortField, sortDir);
-        StudentPageResponse res = studentService.getStudentsByDepartment(deptId, page, size, sortDir, sortField);
+        StudentPageResponse res = studentService.getStudentsByDepartment(deptId, page, size, sortField, sortDir);
         LOG.info("getStudentsByDepartment returned {} records", res.content().size());
         return ResponseEntity.ok(res);
     }

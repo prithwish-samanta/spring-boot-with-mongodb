@@ -224,7 +224,7 @@ public class StudentServiceImpl implements StudentService {
      * Retrieve students by department ID with pagination.
      */
     @Override
-    public StudentPageResponse getStudentsByDepartment(String deptId, int page, int size, String sortDir, String sortField) {
+    public StudentPageResponse getStudentsByDepartment(String deptId, int page, int size, String sortField, String sortDir) {
         Pageable pageReq = getPageRequest(page, size, sortField, sortDir);
         Page<Student> studentPage = studentRepo.findByDepartment_Id(deptId, pageReq);
         LOG.debug(FETCHED_RESOURCE_LOG, studentPage.getNumberOfElements(), studentPage.getTotalPages());

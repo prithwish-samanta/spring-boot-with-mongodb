@@ -34,7 +34,7 @@ public interface StudentService {
 
     StudentPageResponse getHighScorers(String courseName, int minScore, int page, int size, String sortField, String sortDir);
 
-    StudentPageResponse getStudentsByDepartment(String deptId, int page, int size, String sortDir, String sortField);
+    StudentPageResponse getStudentsByDepartment(String deptId, int page, int size, String sortField, String sortDir);
 
     StudentPageResponse getStudentsBornBetween(LocalDate start, LocalDate end, int page, int size, String sortField, String sortDir);
 

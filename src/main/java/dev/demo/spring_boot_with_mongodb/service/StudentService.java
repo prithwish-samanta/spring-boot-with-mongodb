@@ -6,6 +6,11 @@ import dev.demo.spring_boot_with_mongodb.payload.StudentPageResponse;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * Service interface for managing Student entities.
+ * Defines operations for creating, retrieving, updating, deleting,
+ * and querying students with pagination, filtering, and search capabilities.
+ */
 public interface StudentService {
     StudentDTO save(StudentDTO req);
 

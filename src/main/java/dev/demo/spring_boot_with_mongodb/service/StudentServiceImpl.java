@@ -172,7 +172,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     /**
-     * Count total number of active students.
+     * Count the total number of active students.
      */
     @Override
     public Integer getActiveStudentsCount() {

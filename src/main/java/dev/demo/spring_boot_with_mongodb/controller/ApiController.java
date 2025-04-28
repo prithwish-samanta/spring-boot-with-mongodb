@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -156,4 +157,57 @@ public class ApiController {
         StudentPageResponse res = studentService.getStudentByCourse(courseName, page, size, sortField, sortDir);
         return ResponseEntity.ok(res);
     }
+
+    @GetMapping("/high-scorers")
+    public ResponseEntity<StudentPageResponse> getHighScorers(
+            @RequestParam String courseName,
+            @RequestParam int minScore,
+            @RequestParam(value = "page", defaultValue = "1") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /api/v1/students/high-scorers - getHighScorers called with courseName={}, minScore={} page={}, size={}, sortField={}, sortDir={}",
+                courseName, minScore, page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.getHighScorers(courseName, minScore, page, size, sortField, sortDir);
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/by-department/{deptId}")
+    public ResponseEntity<StudentPageResponse> getStudentsByDepartment(
+            @PathVariable String deptId,
+            @RequestParam(value = "page", defaultValue = "1") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /api/v1/students/by-department/{} - getStudentsByDepartment called with page={}, size={}, sortField={}, sortDir={}",
+                deptId, page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.getStudentsByDepartment(deptId, page, size, sortDir, sortField);
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/born-between")
+    public ResponseEntity<StudentPageResponse> getStudentsBornBetween(
+            @RequestParam LocalDate start,
+            @RequestParam LocalDate end,
+            @RequestParam(value = "page", defaultValue = "1") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "dob") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /api/v1/students/born-between - getStudentsBornBetween called with start={}, end={}, page={}, size={}, sortField={}, sortDir={}",
+                start, end, page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.getStudentsBornBetween(start, end, page, size, sortField, sortDir);
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/recent-enrollments")
+    public ResponseEntity<Map<String, Object>> getRecentEnrollments() {
+        LOG.info("GET /api/v1/students/recent-enrollments - getRecentEnrollments called");
+        List<StudentDTO> students = studentService.getRecentEnrollments();
+        Map<String, Object> res = Map.of("total", students.size(), "students", students);
+        return ResponseEntity.ok(res);
+    }
+
 }

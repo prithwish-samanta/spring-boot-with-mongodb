@@ -3,6 +3,7 @@ package dev.demo.spring_boot_with_mongodb.service;
 import dev.demo.spring_boot_with_mongodb.payload.StudentDTO;
 import dev.demo.spring_boot_with_mongodb.payload.StudentPageResponse;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface StudentService {
@@ -25,4 +26,12 @@ public interface StudentService {
     Boolean isStudentExists(String email);
 
     StudentPageResponse getStudentByCourse(String courseName, int page, int size, String sortField, String sortDir);
+
+    StudentPageResponse getHighScorers(String courseName, int minScore, int page, int size, String sortField, String sortDir);
+
+    StudentPageResponse getStudentsByDepartment(String deptId, int page, int size, String sortDir, String sortField);
+
+    StudentPageResponse getStudentsBornBetween(LocalDate start, LocalDate end, int page, int size, String sortField, String sortDir);
+
+    List<StudentDTO> getRecentEnrollments();
 }

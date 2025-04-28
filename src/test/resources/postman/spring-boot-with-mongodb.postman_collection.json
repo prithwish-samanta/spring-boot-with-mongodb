@@ -1,0 +1,430 @@
+{
+  "info": {
+    "_postman_id": "18b069b9-10cc-47ec-a7b7-fea31b2f27dd",
+    "name": "spring-boot-with-mongodb",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16478195"
+  },
+  "item": [
+    {
+      "name": "add new student",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Alice\",\n  \"lastName\": \"Wong\",\n  \"email\": \"alice.wong@example.com\",\n  \"dob\": \"2002-05-14\",\n  \"department\": {\n        \"id\": \"f1775d486ae1579bab8a6036\"\n    },\n  \"courses\": [\n    { \"name\": \"Algorithms\", \"marks\": 92 },\n    { \"name\": \"Databases\", \"marks\": 85 },\n    { \"name\": \"Operating Systems\", \"marks\": 88 }\n  ],\n  \"enrollmentDate\": \"2020-08-20\",\n  \"active\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get students",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}?page=4&size=10&sort=email&dir=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "4"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            },
+            {
+              "key": "sort",
+              "value": "email"
+            },
+            {
+              "key": "dir",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get student by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/680e738f34a356032175fc44",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "680e738f34a356032175fc44"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update student",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n            \"firstName\": \"Thomas\",\n            \"lastName\": \"Jr.\",\n            \"email\": \"alice.thomas56@gmail.com\",\n            \"dob\": \"2000-02-20\",\n            \"department\": {\n                \"id\": \"48ca6a2e1259442233322ae4\"\n            },\n            \"courses\": [\n                {\n                    \"name\": \"Mobile Development\",\n                    \"marks\": 81\n                },\n                {\n                    \"name\": \"Web Development\",\n                    \"marks\": 64\n                },\n                {\n                    \"name\": \"Arts\",\n                    \"marks\": 86\n                }\n            ],\n            \"enrollmentDate\": \"2019-09-22\",\n            \"active\": false\n        }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/ffa26ea084371542720e6661",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "ffa26ea084371542720e6661"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete student",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/6c2da93d08260337d13ad99e",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "6c2da93d08260337d13ad99e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search by name",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/searchByName?name=Alice",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "searchByName"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Alice"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get active students",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/active?page=4&size=10&sort=email&dir=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "active"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "4"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            },
+            {
+              "key": "sort",
+              "value": "email"
+            },
+            {
+              "key": "dir",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get active student count",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/count-active",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "count-active"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "does student exists",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/exists?email=alice.wong@example.com",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "exists"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "alice.wong@example.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get students by course",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/by-course?courseName=AI&page=2&size=5&sort=email&dir=desc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "by-course"
+          ],
+          "query": [
+            {
+              "key": "courseName",
+              "value": "AI"
+            },
+            {
+              "key": "page",
+              "value": "2"
+            },
+            {
+              "key": "size",
+              "value": "5"
+            },
+            {
+              "key": "sort",
+              "value": "email"
+            },
+            {
+              "key": "dir",
+              "value": "desc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get student by high score",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/high-scorers?courseName=AI&minScore=90&page=2&size=2&sort=email&dir=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "high-scorers"
+          ],
+          "query": [
+            {
+              "key": "courseName",
+              "value": "AI"
+            },
+            {
+              "key": "minScore",
+              "value": "90"
+            },
+            {
+              "key": "page",
+              "value": "2"
+            },
+            {
+              "key": "size",
+              "value": "2"
+            },
+            {
+              "key": "sort",
+              "value": "email"
+            },
+            {
+              "key": "dir",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get student by department",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/by-department/2c0fb1628c35c2deae56a80d?page=2&size=5&sort=email&dir=desc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "by-department",
+            "2c0fb1628c35c2deae56a80d"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "2"
+            },
+            {
+              "key": "size",
+              "value": "5"
+            },
+            {
+              "key": "sort",
+              "value": "email"
+            },
+            {
+              "key": "dir",
+              "value": "desc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get student born between",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/born-between?start=1998-01-01&end=2000-12-31&page=2&size=5&sort=dob&dir=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "born-between"
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "1998-01-01"
+            },
+            {
+              "key": "end",
+              "value": "2000-12-31"
+            },
+            {
+              "key": "page",
+              "value": "2"
+            },
+            {
+              "key": "size",
+              "value": "5"
+            },
+            {
+              "key": "sort",
+              "value": "dob"
+            },
+            {
+              "key": "dir",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get recent enrollments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/recent-enrollments",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "recent-enrollments"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

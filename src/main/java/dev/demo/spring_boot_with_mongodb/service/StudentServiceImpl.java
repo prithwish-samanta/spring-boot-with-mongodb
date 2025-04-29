@@ -16,6 +16,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.query.TextCriteria;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -257,6 +258,22 @@ public class StudentServiceImpl implements StudentService {
         List<Student> students = studentRepo.findTop5ByOrderByEnrollmentDateDesc();
         LOG.info("getRecentEnrollments() fetched {} students", students.size());
         return students.stream().map(studentMapper::toDto).toList();
+    }
+
+    /**
+     * Perform a full-text search over student-first names, last names, and email addresses.
+     * Uses the MongoDB text index to match the given term.
+     */
+    @Override
+    public StudentPageResponse textSearch(String term, int page, int size, String sortField, String sortDir) {
+        LOG.info("textSearch() called");
+        TextCriteria criteria = TextCriteria.forDefaultLanguage().matching(term);
+        Pageable pg = getPageRequest(page, size, sortField, sortDir);
+        Page<Student> studentPage = studentRepo.findAllBy(criteria, pg);
+        LOG.debug(FETCHED_RESOURCE_LOG, studentPage.getNumberOfElements(), studentPage.getTotalPages());
+        StudentPageResponse response = studentMapper.toPageResponse(studentPage);
+        LOG.info("textSearch() returning page {} of {}, {} items", response.pageNumber() + 1, response.totalPages(), response.content().size());
+        return response;
     }
 
     /**

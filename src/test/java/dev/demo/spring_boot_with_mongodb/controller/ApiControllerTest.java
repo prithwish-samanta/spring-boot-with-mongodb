@@ -134,7 +134,7 @@ class ApiControllerTest {
     @Test
     @DisplayName("GET /students/searchByName → 200 + JSON")
     @Order(6)
-    void search() throws Exception {
+    void searchByName() throws Exception {
         // given
         StudentDTO a = sampleDto("A1", "Eve", "Lee");
         given(studentService.searchByName("E")).willReturn(List.of(a));
@@ -145,8 +145,38 @@ class ApiControllerTest {
     }
 
     @Test
-    @DisplayName("GET /students/active → 200 + paged JSON")
+    @DisplayName("GET /api/v1/students/search/{text} → 200 + paged body")
     @Order(7)
+    void search() throws Exception {
+        // given
+        String term = "Alice";
+        StudentDTO dto = sampleDto("id1", "Alice", "Smith");
+        StudentPageResponse pageResponse = new StudentPageResponse(
+                List.of(dto), 1, 20, 1L, 1, true, true, false, false);
+        given(studentService.textSearch(term, 1, 20, "lastName", "asc"))
+                .willReturn(pageResponse);
+        // when / then
+        mvc.perform(get("/api/v1/students/search/{text}", term)
+                        .param("page", "1")
+                        .param("size", "20")
+                        .param("sort", "lastName")
+                        .param("dir", "asc")
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.content[0].id").value("id1"))
+                .andExpect(jsonPath("$.content[0].firstName").value("Alice"))
+                .andExpect(jsonPath("$.content[0].lastName").value("Smith"))
+                .andExpect(jsonPath("$.pageNumber").value(1))
+                .andExpect(jsonPath("$.totalElements").value(1));
+        // verify service invocation
+        verify(studentService).textSearch(term, 1, 20, "lastName", "asc");
+    }
+
+
+    @Test
+    @DisplayName("GET /students/active → 200 + paged JSON")
+    @Order(8)
     void activeStudents() throws Exception {
         // given
         StudentDTO active = sampleDto("act1", "Fay", "Wong");
@@ -164,7 +194,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/count-active → 200 + JSON")
-    @Order(8)
+    @Order(9)
     void countActiveStudents() throws Exception {
         // given
         given(studentService.getActiveStudentsCount()).willReturn(42);
@@ -176,7 +206,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/exists → 200 + JSON")
-    @Order(9)
+    @Order(10)
     void doesStudentExists() throws Exception {
         // given
         given(studentService.isStudentExists("x@y.com")).willReturn(true);
@@ -188,7 +218,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/by-course → 200 + paged JSON")
-    @Order(10)
+    @Order(11)
     void getStudentsByCourse() throws Exception {
         // given
         StudentDTO c = sampleDto("c1", "Gus", "Rhee");
@@ -207,7 +237,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/high-scorers → 200 + paged JSON")
-    @Order(11)
+    @Order(12)
     void getHighScorers() throws Exception {
         // given
         StudentDTO h = sampleDto("h1", "Ivy", "Chan");
@@ -226,7 +256,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/by-department → 200 + paged JSON")
-    @Order(12)
+    @Order(13)
     void getStudentsByDepartment() throws Exception {
         // given
         StudentDTO d = sampleDto("d1", "John", "Doe");
@@ -244,7 +274,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/born-between → 200 + paged JSON")
-    @Order(13)
+    @Order(14)
     void getStudentsBornBetween() throws Exception {
         // given
         StudentDTO b = sampleDto("b1", "Ken", "Lim");
@@ -266,7 +296,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/recent-enrollments → 200 + JSON array")
-    @Order(14)
+    @Order(15)
     void getRecentEnrollments() throws Exception {
         // given
         StudentDTO r = sampleDto("r1", "Leo", "Ngy");

@@ -120,14 +120,41 @@ public class ApiController {
      * @return map containing the search term, count, and matched students
      */
     @GetMapping("/searchByName")
-    public ResponseEntity<Map<String, Object>> search(@RequestParam String name) {
-        LOG.info("GET /api/v1/students/searchByName - search called with name={}", name);
+    public ResponseEntity<Map<String, Object>> searchByName(@RequestParam String name) {
+        LOG.info("GET /api/v1/students/searchByName - searchByName called with name={}", name);
         List<StudentDTO> students = studentService.searchByName(name);
         Map<String, Object> res = new HashMap<>();
         res.put("name", name);
         res.put("count", students.size());
         res.put("students", students);
         LOG.info("searchByName found {} students matching '{}'", students.size(), name);
+        return ResponseEntity.ok(res);
+    }
+
+    /**
+     * Perform a full-text search over student-first names, last names, and email addresses.
+     * Uses the MongoDB text index to match the given term.
+     *
+     * @param term      the search term to match against the text index
+     * @param page      1-based page number to retrieve (default = 1)
+     * @param size      number of records per page (default = 20)
+     * @param sortField the field by which to sort results (default = "lastName")
+     * @param sortDir   sort a direction, either "asc" for ascending or "desc" for descending (default = "asc")
+     * @return a paginated response containing the list of matching students and page metadata
+     */
+    @GetMapping("/search/{text}")
+    public ResponseEntity<StudentPageResponse> textSearch(
+            @PathVariable("text") String term,
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /search/{} - textSearch called with term={}, page={}, size={}, sortField={}, sortDir={} ",
+                term, term, page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.textSearch(term, page, size, sortField, sortDir);
+        LOG.info("textSearch returned {} records on page {}/{}",
+                res.content().size(), res.pageNumber() + 1, res.totalPages());
         return ResponseEntity.ok(res);
     }
 

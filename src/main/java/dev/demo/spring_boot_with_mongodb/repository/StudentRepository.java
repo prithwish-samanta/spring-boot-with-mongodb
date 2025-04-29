@@ -3,6 +3,7 @@ package dev.demo.spring_boot_with_mongodb.repository;
 import dev.demo.spring_boot_with_mongodb.model.Student;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.mongodb.core.query.TextCriteria;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -34,6 +35,8 @@ public interface StudentRepository extends MongoRepository<Student, String> {
             }
             """)
     List<Student> getByName(String nameRegex);
+
+    Page<Student> findAllBy(TextCriteria criteria, Pageable pageable);
 
     /**
      * Retrieve a page of active students (where active = true).

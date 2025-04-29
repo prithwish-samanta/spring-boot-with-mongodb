@@ -35,18 +35,18 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{BASE_URL}}?page=4&size=10&sort=email&dir=asc",
+          "raw": "{{BASE_URL}}?page=1&size=30&sort=email&dir=asc",
           "host": [
             "{{BASE_URL}}"
           ],
           "query": [
             {
               "key": "page",
-              "value": "4"
+              "value": "1"
             },
             {
               "key": "size",
-              "value": "10"
+              "value": "30"
             },
             {
               "key": "sort",
@@ -67,12 +67,12 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{BASE_URL}}/680e738f34a356032175fc44",
+          "raw": "{{BASE_URL}}/16628ced76ba6190d5e3be97",
           "host": [
             "{{BASE_URL}}"
           ],
           "path": [
-            "680e738f34a356032175fc44"
+            "16628ced76ba6190d5e3be97"
           ]
         }
       },
@@ -138,6 +138,42 @@
             {
               "key": "name",
               "value": "Alice"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/search/alice jackson?page=1&size=20&sort=lastName&dir=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "search",
+            "alice jackson"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "size",
+              "value": "20"
+            },
+            {
+              "key": "sort",
+              "value": "lastName"
+            },
+            {
+              "key": "dir",
+              "value": "asc"
             }
           ]
         }

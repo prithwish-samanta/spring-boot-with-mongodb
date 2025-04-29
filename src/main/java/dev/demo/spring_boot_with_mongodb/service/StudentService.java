@@ -39,4 +39,6 @@ public interface StudentService {
     StudentPageResponse getStudentsBornBetween(LocalDate start, LocalDate end, int page, int size, String sortField, String sortDir);
 
     List<StudentDTO> getRecentEnrollments();
+
+    StudentPageResponse textSearch(String term, int page, int size, String sortField, String sortDir);
 }

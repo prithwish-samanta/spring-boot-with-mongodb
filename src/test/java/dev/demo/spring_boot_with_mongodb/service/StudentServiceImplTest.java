@@ -21,6 +21,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.*;
+import org.springframework.data.mongodb.core.query.TextCriteria;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -150,6 +151,21 @@ class StudentServiceImplTest {
         List<StudentDTO> list = service.searchByName("Al");
         // then
         assertThat(list).containsExactly(dto);
+    }
+
+    @Test
+    @DisplayName("search() delegates to repo + mapper")
+    void textSearch() {
+        // given
+        Page<Student> page = new PageImpl<>(List.of(entity));
+        given(studentRepo.findAllBy(any(TextCriteria.class), any(Pageable.class))).willReturn(page);
+        StudentPageResponse pageResp = new StudentPageResponse(
+                List.of(dto), 1, 20, 1L, 1, true, true, false, false);
+        given(studentMapper.toPageResponse(page)).willReturn(pageResp);
+        // when
+        StudentPageResponse resp = service.textSearch("a.wong", 1, 20, "lastName", "asc");
+        // then
+        assertThat(resp).isEqualTo(pageResp);
     }
 
     @Test

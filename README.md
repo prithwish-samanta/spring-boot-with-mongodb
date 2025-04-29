@@ -55,31 +55,32 @@ The REST API will be available at http://localhost:8888/api/v1/students
 
 ## 📡 API Endpoints & Concepts
 
-| HTTP Method | Path                                | Description                           | Concepts                             |
-|-------------|-------------------------------------|---------------------------------------|--------------------------------------|
-| POST        | /                                   | Create a new Student                  | CRUD                                 |
-| GET         | /                                   | List Students (page, size, sort, dir) | Pagination & Sorting                 |
-| GET         | /{id}                               | Get Student by ID                     | CRUD                                 |
-| PUT         | /{id}                               | Update Student                        | CRUD                                 |
-| DELETE      | /{id}                               | Delete Student                        | CRUD                                 |
-| GET         | /active                             | List Active Students                  | Derived Query (findByActiveTrue)     |
-| GET         | /count-active                       | Count Active Students                 | Derived Query (countByActiveTrue)    |
-| GET         | /exists?email=<email>               | Check existence by email              | Derived Query (existsByEmail)        |
-| GET         | /searchByName?name=<term>           | Regex search on first/last name       | Custom @Query (regex)                |
-| GET         | /by-course?courseName=<name>        | Students by Course name               | Derived Query (findByCoursesName)    |
-| GET         | /high-scorers?courseName=&minScore= | Students scoring ≥ minScore in course | Derived Query (compound)             |
-| GET         | /by-department/{deptId}             | Students in Department                | Derived Query (findByDepartment_Id)  |
-| GET         | /born-between?start=&end=           | Students born in date range           | Derived Query (findByDobBetween)     |
-| GET         | /recent-enrollments                 | Top 5 recent enrollments              | Derived Query (findTop5ByOrderBy...) |
+| HTTP Method | Path                                | Description                                       | Concepts                                         |
+|-------------|-------------------------------------|---------------------------------------------------|--------------------------------------------------|
+| POST        | /                                   | Create a new Student                              | CRUD                                             |
+| GET         | /                                   | List Students (page, size, sort, dir)             | Pagination & Sorting                             |
+| GET         | /{id}                               | Get Student by ID                                 | CRUD                                             |
+| PUT         | /{id}                               | Update Student                                    | CRUD                                             |
+| DELETE      | /{id}                               | Delete Student                                    | CRUD                                             |
+| GET         | /active                             | List Active Students                              | Derived Query (findByActiveTrue)                 |
+| GET         | //active/by-department/{deptId}     | List Active Students by dept using compound index | Derived Query (findByDepartment_IdAndActiveTrue) |
+| GET         | /count-active                       | Count Active Students                             | Derived Query (countByActiveTrue)                |
+| GET         | /exists?email=<email>               | Check existence by email                          | Derived Query (existsByEmail)                    |
+| GET         | /searchByName?name=<term>           | Regex search on first/last name                   | Custom @Query (regex)                            |
+| GET         | /search/{text}                      | Text-indexed based search                         | Derived @Query (findAllBy)                       |
+| GET         | /by-course?courseName=<name>        | Students by Course name                           | Derived Query (findByCoursesName)                |
+| GET         | /high-scorers?courseName=&minScore= | Students scoring ≥ minScore in course             | Derived Query (compound)                         |
+| GET         | /by-department/{deptId}             | Students in Department                            | Derived Query (findByDepartment_Id)              |
+| GET         | /born-between?start=&end=           | Students born in date range                       | Derived Query (findByDobBetween)                 |
+| GET         | /recent-enrollments                 | Top 5 recent enrollments                          | Derived Query (findTop5ByOrderBy...)             |
 
 ## TODO
 
-- [ ] Implement native text-search endpoint (GET /text?term=...) using MongoDB text index
+- [ ] Add mongodb test-container for testing repositories
 - [ ] Create aggregation pipeline endpoints:
     - [ ] GET /agg/avg-marks (average marks per course)
     - [ ] GET /agg/count-by-dept (student count by department)
     - [ ] GET /lookup (join students with departments)
-- [ ] Define and apply MongoDB indexes (e.g., text, compound) in code or migrations
 
 ## 📬 Postman Collection
 

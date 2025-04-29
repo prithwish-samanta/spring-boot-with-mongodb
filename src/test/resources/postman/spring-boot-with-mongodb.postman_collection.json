@@ -216,6 +216,43 @@
       "response": []
     },
     {
+      "name": "get active students by dept",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/active/by-department/48ca6a2e1259442233322ae4?page=1&size=10&sort=email&dir=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "active",
+            "by-department",
+            "48ca6a2e1259442233322ae4"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            },
+            {
+              "key": "sort",
+              "value": "email"
+            },
+            {
+              "key": "dir",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
       "name": "get active student count",
       "request": {
         "method": "GET",

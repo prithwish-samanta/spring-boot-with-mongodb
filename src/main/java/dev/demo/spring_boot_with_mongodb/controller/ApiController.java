@@ -150,7 +150,7 @@ public class ApiController {
             @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
             @RequestParam(value = "dir", defaultValue = "asc") String sortDir
     ) {
-        LOG.info("GET /search/{} - textSearch called with term={}, page={}, size={}, sortField={}, sortDir={} ",
+        LOG.info("GET api/v1/students/search/{} - textSearch called with term={}, page={}, size={}, sortField={}, sortDir={} ",
                 term, term, page, size, sortField, sortDir);
         StudentPageResponse res = studentService.textSearch(term, page, size, sortField, sortDir);
         LOG.info("textSearch returned {} records on page {}/{}",
@@ -178,6 +178,33 @@ public class ApiController {
                 page, size, sortField, sortDir);
         StudentPageResponse res = studentService.getActiveStudents(page, size, sortField, sortDir);
         LOG.info("activeStudents returned {} records", res.content().size());
+        return ResponseEntity.ok(res);
+    }
+
+    /**
+     * Retrieve a paginated list of active students in a given department.
+     * Uses the MongoDB compound index (dept_active_idx) to retrieve data.
+     *
+     * @param deptId    the identifier of the department to filter active students
+     * @param page      1-based page number for pagination (default = 1)
+     * @param size      number of records per page (default = 20)
+     * @param sortField the entity field by which to sort results (default = “lastName”)
+     * @param sortDir   in the sort direction, “asc” or “desc” (default = “asc”)
+     * @return a {@link StudentPageResponse} containing only active students
+     * belonging to the specified department, with paging metadata
+     */
+    @GetMapping("/active/by-department/{deptId}")
+    public ResponseEntity<StudentPageResponse> activeByDept(
+            @PathVariable String deptId,
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(value = "sort", defaultValue = "lastName") String sortField,
+            @RequestParam(value = "dir", defaultValue = "asc") String sortDir
+    ) {
+        LOG.info("GET /api/v1/students/active/by-department/{} - activeByDept called with page={}, size={}, sortField={}, sortDir={}",
+                deptId, page, size, sortField, sortDir);
+        StudentPageResponse res = studentService.getActiveByDepartment(deptId, page, size, sortField, sortDir);
+        LOG.info("activeByDept returned {} records", res.content().size());
         return ResponseEntity.ok(res);
     }
 

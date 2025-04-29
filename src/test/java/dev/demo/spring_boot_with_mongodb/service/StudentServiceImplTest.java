@@ -154,7 +154,7 @@ class StudentServiceImplTest {
     }
 
     @Test
-    @DisplayName("search() delegates to repo + mapper")
+    @DisplayName("textSearch() delegates to repo + mapper")
     void textSearch() {
         // given
         Page<Student> page = new PageImpl<>(List.of(entity));
@@ -164,6 +164,21 @@ class StudentServiceImplTest {
         given(studentMapper.toPageResponse(page)).willReturn(pageResp);
         // when
         StudentPageResponse resp = service.textSearch("a.wong", 1, 20, "lastName", "asc");
+        // then
+        assertThat(resp).isEqualTo(pageResp);
+    }
+
+    @Test
+    @DisplayName("getActiveByDepartment() delegates to repo + mapper")
+    void getActiveByDepartment() {
+        //given
+        Page<Student> page = new PageImpl<>(List.of(entity));
+        given(studentRepo.findByDepartment_IdAndActiveTrue(eq("d1"), any(Pageable.class))).willReturn(page);
+        StudentPageResponse pageResp = new StudentPageResponse(
+                List.of(dto), 1, 20, 1L, 1, true, true, false, false);
+        given(studentMapper.toPageResponse(page)).willReturn(pageResp);
+        // when
+        StudentPageResponse resp = service.getActiveByDepartment("d1", 1, 20, "lastName", "asc");
         // then
         assertThat(resp).isEqualTo(pageResp);
     }

@@ -36,7 +36,23 @@ public interface StudentRepository extends MongoRepository<Student, String> {
             """)
     List<Student> getByName(String nameRegex);
 
+    /**
+     * Perform a full-text search on the students collection.
+     *
+     * @param criteria the TextCriteria defining the search term(s) and language
+     * @param pageable pagination and sorting instructions
+     * @return a Page of Student entities whose text-indexed fields match the criteria
+     */
     Page<Student> findAllBy(TextCriteria criteria, Pageable pageable);
+
+    /**
+     * Retrieve only active students in the given department.
+     *
+     * @param deptId   the ID of the department to filter by
+     * @param pageable pagination and sorting instructions
+     * @return a Page of active Student entities belonging to that department
+     */
+    Page<Student> findByDepartment_IdAndActiveTrue(String deptId, Pageable pageable);
 
     /**
      * Retrieve a page of active students (where active = true).

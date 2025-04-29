@@ -193,8 +193,34 @@ class ApiControllerTest {
     }
 
     @Test
-    @DisplayName("GET /students/count-active → 200 + JSON")
+    @DisplayName("GET students/active/by-department/{deptId} → 200 + paged JSON")
     @Order(9)
+    void activeByDept() throws Exception {
+        //given
+        String deptId = "dept1";
+        StudentDTO s1 = sampleDto("id1", "Alice", "Wonder");
+        StudentDTO s2 = sampleDto("id2", "Bob", "Builder");
+        StudentPageResponse pageResp = new StudentPageResponse(
+                List.of(s1, s2), 1, 20, 2, 1, true, true, false, false);
+        given(studentService.getActiveByDepartment(deptId, 1, 20, "lastName", "asc")).willReturn(pageResp);
+        //when / then
+        mvc.perform(get("/api/v1/students/active/by-department/{deptId}", deptId)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                // verify paging metadata
+                .andExpect(jsonPath("$.pageNumber").value(1))
+                .andExpect(jsonPath("$.totalElements").value(2))
+                // verify content array length and fields
+                .andExpect(jsonPath("$.content.length()").value(2))
+                .andExpect(jsonPath("$.content[0].id").value("id1"))
+                .andExpect(jsonPath("$.content[1].id").value("id2"));
+        // verify that service was called with defaults
+        verify(studentService).getActiveByDepartment(deptId, 1, 20, "lastName", "asc");
+    }
+
+    @Test
+    @DisplayName("GET /students/count-active → 200 + JSON")
+    @Order(10)
     void countActiveStudents() throws Exception {
         // given
         given(studentService.getActiveStudentsCount()).willReturn(42);
@@ -206,7 +232,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/exists → 200 + JSON")
-    @Order(10)
+    @Order(11)
     void doesStudentExists() throws Exception {
         // given
         given(studentService.isStudentExists("x@y.com")).willReturn(true);
@@ -218,7 +244,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/by-course → 200 + paged JSON")
-    @Order(11)
+    @Order(12)
     void getStudentsByCourse() throws Exception {
         // given
         StudentDTO c = sampleDto("c1", "Gus", "Rhee");
@@ -237,7 +263,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/high-scorers → 200 + paged JSON")
-    @Order(12)
+    @Order(13)
     void getHighScorers() throws Exception {
         // given
         StudentDTO h = sampleDto("h1", "Ivy", "Chan");
@@ -256,7 +282,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/by-department → 200 + paged JSON")
-    @Order(13)
+    @Order(14)
     void getStudentsByDepartment() throws Exception {
         // given
         StudentDTO d = sampleDto("d1", "John", "Doe");
@@ -274,7 +300,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/born-between → 200 + paged JSON")
-    @Order(14)
+    @Order(15)
     void getStudentsBornBetween() throws Exception {
         // given
         StudentDTO b = sampleDto("b1", "Ken", "Lim");
@@ -296,7 +322,7 @@ class ApiControllerTest {
 
     @Test
     @DisplayName("GET /students/recent-enrollments → 200 + JSON array")
-    @Order(15)
+    @Order(16)
     void getRecentEnrollments() throws Exception {
         // given
         StudentDTO r = sampleDto("r1", "Leo", "Ngy");

@@ -277,6 +277,21 @@ public class StudentServiceImpl implements StudentService {
     }
 
     /**
+     * Retrieve a paginated list of active students in a given department.
+     * Uses the MongoDB compound index (dept_active_idx) to retrieve data.
+     */
+    @Override
+    public StudentPageResponse getActiveByDepartment(String deptId, int page, int size, String sortField, String sortDir) {
+        LOG.info("getActiveByDepartment() called");
+        Pageable pageReq = getPageRequest(page, size, sortField, sortDir);
+        Page<Student> studentPage = studentRepo.findByDepartment_IdAndActiveTrue(deptId, pageReq);
+        LOG.debug(FETCHED_RESOURCE_LOG, studentPage.getNumberOfElements(), studentPage.getTotalPages());
+        StudentPageResponse response = studentMapper.toPageResponse(studentPage);
+        LOG.info("getActiveByDepartment() returning page {} of {}, {} items", response.pageNumber() + 1, response.totalPages(), response.content().size());
+        return response;
+    }
+
+    /**
      * Helper to construct a Pageable with zero-based page index and sort.
      */
     private Pageable getPageRequest(int page, int size, String sortField, String sortDir) {

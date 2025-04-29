@@ -41,4 +41,6 @@ public interface StudentService {
     List<StudentDTO> getRecentEnrollments();
 
     StudentPageResponse textSearch(String term, int page, int size, String sortField, String sortDir);
+
+    StudentPageResponse getActiveByDepartment(String deptId, int page, int size, String sortField, String sortDir);
 }
